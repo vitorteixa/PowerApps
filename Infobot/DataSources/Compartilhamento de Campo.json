@@ -1,0 +1,72 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "principalobjectattributeaccessset",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "principalobjectattributeaccess",
+    "MaxGetRowsCount": 500,
+    "Name": "Compartilhamento de Campo",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_objectid_value": "Instância de entidade",
+      "_principalid_value": "Entidade",
+      "attributeid": "Campo protegido",
+      "organizationid": "Organização",
+      "principalobjectattributeaccessid": "Campo protegido compartilhado",
+      "readaccess": "Permissão de leitura",
+      "updateaccess": "Permissão de atualização",
+      "versionnumber": "VersionNumber"
+    },
+    "PreferredName": "Compartilhamento de Campo",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Compartilhamento de Campo (Modos de exibição)",
+    "Name": "_principalobjectattributeaccess_views",
+    "RelatedEntityName": "Compartilhamento de Campo",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {}
+  },
+  {
+    "DisplayName": "Permissão de leitura (Compartilhamento de Campo)",
+    "Name": "principalobjectattributeaccess_readaccess",
+    "OptionSetInfoNameMapping": {
+      "0": "Não",
+      "1": "Sim"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "readaccess",
+        "OptionSetReferenceEntityName": "Compartilhamento de Campo"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "readaccess",
+    "RelatedEntityName": "Compartilhamento de Campo",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Permissão de atualização (Compartilhamento de Campo)",
+    "Name": "principalobjectattributeaccess_updateaccess",
+    "OptionSetInfoNameMapping": {
+      "0": "Não",
+      "1": "Sim"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "updateaccess",
+        "OptionSetReferenceEntityName": "Compartilhamento de Campo"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "updateaccess",
+    "RelatedEntityName": "Compartilhamento de Campo",
+    "Type": "OptionSetInfo"
+  }
+]

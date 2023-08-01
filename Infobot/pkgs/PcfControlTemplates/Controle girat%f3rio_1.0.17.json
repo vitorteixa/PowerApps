@@ -1,0 +1,989 @@
+{
+  "AuthConfigProperties": [
+    {
+      "AccessibleLabel": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Appearance": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Height": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "Size",
+        "PropertyKind": 2,
+        "SectionIndex": 1,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Label": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "LabelPosition": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "SpinnerSize": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Width": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "Size",
+        "PropertyKind": 2,
+        "SectionIndex": 1,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "X": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "Position",
+        "PropertyKind": 2,
+        "SectionIndex": 1,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Y": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "Position",
+        "PropertyKind": 2,
+        "SectionIndex": 1,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      }
+    }
+  ],
+  "CommonEvents": [
+    {
+      "Description": "",
+      "DisplayName": "OnChange",
+      "Hidden": false,
+      "IsPrimaryInput": false,
+      "Name": "OnChange"
+    }
+  ],
+  "ControlConstructor": "Spinner",
+  "ControlNamespace": "PowerApps.CoreControls",
+  "DisplayNameKey": "Spinner_Display_Key",
+  "IncludedProperties": [
+    {
+      "Category": "design",
+      "DefaultValue": "",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "CC_X",
+      "DisplayNameResourceString": "CC_X",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "X",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 2,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "CC_Y",
+      "DisplayNameResourceString": "CC_Y",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Y",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 2,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "200",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "Width",
+      "DisplayNameResourceString": "Width",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Width",
+      "NullDefaultValue": "0",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "350",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 2,
+      "Usage": 2,
+      "WebDefaultValue": "112"
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "200",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "Height",
+      "DisplayNameResourceString": "Height",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Height",
+      "NullDefaultValue": "0",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "350",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 2,
+      "Usage": 2,
+      "WebDefaultValue": "112"
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "true",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "Visible",
+      "DisplayNameResourceString": "Visible",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Visible",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 4,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "DisplayMode",
+      "DisplayNameResourceString": "DisplayMode",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "DisplayMode",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 27,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    }
+  ],
+  "Name": "Controle giratório",
+  "Properties": [
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "Rótulo do Controle Giratório",
+      "DescriptionResourceString": "Spinner_Label_Desc_Key",
+      "DisplayName": "Rótulo",
+      "DisplayNameResourceString": "Spinner_Label_Display_Key",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Label",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 6,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "Rótulo da Acessibilidade do componente Giratório",
+      "DescriptionResourceString": "Spinner_AccessibleLabel_Desc_Key",
+      "DisplayName": "Rótulo de Acessibilidade",
+      "DisplayNameResourceString": "Spinner_AccessibleLabel_Display_Key",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "AccessibleLabel",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 6,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "Primary",
+      "Description": "Aparência do Controle Giratório",
+      "DescriptionResourceString": "Spinner_Appearance_Desc_Key",
+      "DisplayName": "Aparência",
+      "DisplayNameResourceString": "Spinner_Appearance_Display_Key",
+      "EnumValues": [
+        {
+          "Description": "Invertido",
+          "DisplayName": "Invertido",
+          "IsDefaultValue": false,
+          "Name": "Inverted",
+          "Value": "Inverted"
+        },
+        {
+          "Description": "Primária",
+          "DisplayName": "Primária",
+          "IsDefaultValue": true,
+          "Name": "Primary",
+          "Value": "Primary"
+        }
+      ],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Appearance",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "Primary",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 1,
+      "Usage": 0,
+      "WebDefaultValue": "Primary"
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "After",
+      "Description": "Definir posição para o rótulo ao redor do Controle Giratório",
+      "DescriptionResourceString": "Spinner_LabelPosition_Desc_Key",
+      "DisplayName": "Posição do Rótulo",
+      "DisplayNameResourceString": "Spinner_LabelPosition_Display_Key",
+      "EnumValues": [
+        {
+          "Description": "Antes",
+          "DisplayName": "Antes",
+          "IsDefaultValue": false,
+          "Name": "Before",
+          "Value": "Before"
+        },
+        {
+          "Description": "Depois",
+          "DisplayName": "Depois",
+          "IsDefaultValue": true,
+          "Name": "After",
+          "Value": "After"
+        },
+        {
+          "Description": "Acima",
+          "DisplayName": "Acima",
+          "IsDefaultValue": false,
+          "Name": "Above",
+          "Value": "Above"
+        },
+        {
+          "Description": "Abaixo",
+          "DisplayName": "Abaixo",
+          "IsDefaultValue": false,
+          "Name": "Below",
+          "Value": "Below"
+        }
+      ],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "LabelPosition",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "After",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 1,
+      "Usage": 0,
+      "WebDefaultValue": "After"
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "Medium",
+      "Description": "Definir tamanho do Controle Giratório",
+      "DescriptionResourceString": "Spinner_SpinnerSize_Desc_Key",
+      "DisplayName": "Tamanho do Controle Giratório",
+      "DisplayNameResourceString": "Spinner_SpinnerSize_Display_Key",
+      "EnumValues": [
+        {
+          "Description": "Muito Pequeno",
+          "DisplayName": "Muito Pequeno",
+          "IsDefaultValue": false,
+          "Name": "Tiny",
+          "Value": "Tiny"
+        },
+        {
+          "Description": "Extra Pequeno",
+          "DisplayName": "Extra Pequeno",
+          "IsDefaultValue": false,
+          "Name": "ExtraSmall",
+          "Value": "ExtraSmall"
+        },
+        {
+          "Description": "Pequeno",
+          "DisplayName": "Pequeno",
+          "IsDefaultValue": false,
+          "Name": "Small",
+          "Value": "Small"
+        },
+        {
+          "Description": "Médio",
+          "DisplayName": "Médio",
+          "IsDefaultValue": true,
+          "Name": "Medium",
+          "Value": "Medium"
+        },
+        {
+          "Description": "Grande",
+          "DisplayName": "Grande",
+          "IsDefaultValue": false,
+          "Name": "Large",
+          "Value": "Large"
+        },
+        {
+          "Description": "Extragrande",
+          "DisplayName": "Extragrande",
+          "IsDefaultValue": false,
+          "Name": "ExtraLarge",
+          "Value": "ExtraLarge"
+        },
+        {
+          "Description": "Muito grande",
+          "DisplayName": "Muito grande",
+          "IsDefaultValue": false,
+          "Name": "Huge",
+          "Value": "Huge"
+        }
+      ],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "SpinnerSize",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "Medium",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 1,
+      "Usage": 0,
+      "WebDefaultValue": "Medium"
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "",
+      "Description": "NA",
+      "DescriptionResourceString": "NA",
+      "DisplayName": "NA",
+      "DisplayNameResourceString": "NA",
+      "EnumValues": [],
+      "HelperUI": "",
+      "Hidden": true,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "TabIndex",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 16,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "",
+      "Description": "NA",
+      "DescriptionResourceString": "NA",
+      "DisplayName": "NA",
+      "DisplayNameResourceString": "NA",
+      "EnumValues": [],
+      "HelperUI": "",
+      "Hidden": true,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Tooltip",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 6,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "PCFTeamsTheme",
+      "DisplayNameResourceString": "",
+      "HelperUI": "",
+      "Hidden": true,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "PCFTeamsTheme",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 3,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    }
+  ],
+  "Resources": [
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 1,
+      "ModifiedPath": "",
+      "Path": "/PCF/prop-types.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 2,
+      "ModifiedPath": "",
+      "Path": "/PCF/react-fela.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 3,
+      "ModifiedPath": "",
+      "Path": "/PCF/fela.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 4,
+      "ModifiedPath": "",
+      "Path": "/PCF/fela-dom.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 6,
+      "ModifiedPath": "",
+      "Path": "/ctrllib/PCFControls/js/PCFControlWrapper.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 7,
+      "ModifiedPath": "",
+      "Path": "/ctrllib/PcfControlProxy/js/PcfControlProxy.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 7,
+      "ModifiedPath": "",
+      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"PowerApps.CoreControls.Spinner\",\"CustomControlId\":\"PowerApps.CoreControls.Spinner\",\"IsVirtual\":true,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{},\"Properties\":{\"Label\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"AccessibleLabel\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Appearance\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Primary\"},\"LabelPosition\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"After\"},\"SpinnerSize\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Medium\"},\"TabIndex\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Tooltip\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"}},\"FeatureUsage\":null},\"Events\":null,\"CommonEvents\":null,\"DesignMap\":null,\"PropertyDependencies\":[],\"Children\":null}}",
+      "Type": 3
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 8,
+      "ModifiedPath": "",
+      "Path": "{\"Id\":\"ManifestPropertyTypes\",\"Data\":{\"Properties\":[{\"Name\":\"Label\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"AccessibleLabel\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Appearance\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"LabelPosition\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"SpinnerSize\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"TabIndex\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Tooltip\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PCFTeamsTheme\",\"Type\":\"String\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"X\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Y\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Width\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Height\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Visible\",\"Type\":\"Boolean\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"DisplayMode\",\"Type\":\"DisplayMode\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true}]}}",
+      "Type": 3
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 9,
+      "ModifiedPath": "",
+      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"1.0.17\",\"IsFirstParty\":true}}",
+      "Type": 3
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 10,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/bundle.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 9,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1033.resx",
+      "Type": 2
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 12,
+      "ModifiedPath": "",
+      "Path": "{\"Id\":\"FormattingData\",\"Data\":{\"timeZoneUtcOffsetMinutes\":0,\"dateTimeFormatInfo\":{\"AMDesignator\":\"\",\"Calendar\":{\"MinSupportedDateTime\":\"0001-01-01T00:00:00\",\"MaxSupportedDateTime\":\"9999-12-31T23:59:59.9999999\",\"AlgorithmType\":1,\"CalendarType\":1,\"Eras\":[1],\"TwoDigitYearMax\":2029,\"IsReadOnly\":false},\"DateSeparator\":\"/\",\"FirstDayOfWeek\":0,\"CalendarWeekRule\":0,\"FullDateTimePattern\":\"dddd, d' de 'MMMM' de 'yyyy HH:mm:ss\",\"LongDatePattern\":\"dddd, d' de 'MMMM' de 'yyyy\",\"LongTimePattern\":\"HH:mm:ss\",\"MonthDayPattern\":\"d 'de' MMMM\",\"PMDesignator\":\"\",\"RFC1123Pattern\":\"ddd, dd MMM yyyy HH':'mm':'ss 'GMT'\",\"ShortDatePattern\":\"dd/MM/yyyy\",\"ShortTimePattern\":\"HH:mm\",\"SortableDateTimePattern\":\"yyyy'-'MM'-'dd'T'HH':'mm':'ss\",\"TimeSeparator\":\":\",\"UniversalSortableDateTimePattern\":\"yyyy'-'MM'-'dd HH':'mm':'ss'Z'\",\"YearMonthPattern\":\"MMMM' de 'yyyy\",\"AbbreviatedDayNames\":[\"dom\",\"seg\",\"ter\",\"qua\",\"qui\",\"sex\",\"sáb\"],\"ShortestDayNames\":[\"D\",\"S\",\"T\",\"Q\",\"Q\",\"S\",\"S\"],\"DayNames\":[\"domingo\",\"segunda-feira\",\"terça-feira\",\"quarta-feira\",\"quinta-feira\",\"sexta-feira\",\"sábado\"],\"AbbreviatedMonthNames\":[\"jan\",\"fev\",\"mar\",\"abr\",\"mai\",\"jun\",\"jul\",\"ago\",\"set\",\"out\",\"nov\",\"dez\",\"\"],\"MonthNames\":[\"janeiro\",\"fevereiro\",\"março\",\"abril\",\"maio\",\"junho\",\"julho\",\"agosto\",\"setembro\",\"outubro\",\"novembro\",\"dezembro\",\"\"],\"IsReadOnly\":false,\"NativeCalendarName\":\"Calendário gregoriano\",\"AbbreviatedMonthGenitiveNames\":[\"jan\",\"fev\",\"mar\",\"abr\",\"mai\",\"jun\",\"jul\",\"ago\",\"set\",\"out\",\"nov\",\"dez\",\"\"],\"MonthGenitiveNames\":[\"janeiro\",\"fevereiro\",\"março\",\"abril\",\"maio\",\"junho\",\"julho\",\"agosto\",\"setembro\",\"outubro\",\"novembro\",\"dezembro\",\"\"]},\"numberFormatInfo\":{\"CurrencyDecimalDigits\":2,\"CurrencyDecimalSeparator\":\",\",\"IsReadOnly\":false,\"CurrencyGroupSizes\":[3],\"NumberGroupSizes\":[3],\"PercentGroupSizes\":[3],\"CurrencyGroupSeparator\":\".\",\"CurrencySymbol\":\"R$\",\"NaNSymbol\":\"NaN\",\"CurrencyNegativePattern\":9,\"NumberNegativePattern\":1,\"PercentPositivePattern\":1,\"PercentNegativePattern\":1,\"NegativeInfinitySymbol\":\"-∞\",\"NegativeSign\":\"-\",\"NumberDecimalDigits\":2,\"NumberDecimalSeparator\":\",\",\"NumberGroupSeparator\":\".\",\"CurrencyPositivePattern\":2,\"PositiveInfinitySymbol\":\"∞\",\"PositiveSign\":\"+\",\"PercentDecimalDigits\":2,\"PercentDecimalSeparator\":\",\",\"PercentGroupSeparator\":\".\",\"PercentSymbol\":\"%\",\"PerMilleSymbol\":\"‰\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"DigitSubstitution\":1},\"timeZoneAdjusters\":[],\"formatInfoCultureName\":\"pt-BR\",\"formatter\":null,\"languagesByCode\":{\"1046\":\"Portuguese (Brazil)\",\"-1\":\"All Languages\"}}}",
+      "Type": 3
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1025.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1026.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1027.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1028.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1029.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1030.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1031.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1032.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1033.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1035.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1036.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1037.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1038.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1040.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1041.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1042.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1043.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1044.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1045.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1046.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1048.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1049.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1050.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1051.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1053.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1054.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1055.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1057.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1058.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1060.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1061.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1062.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1063.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1066.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1069.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1081.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1086.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1087.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.1110.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.2052.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.2070.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.2074.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.3076.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.3082.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/PowerApps_CoreControls_Spinner/strings/Spinner.3098.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 13,
+      "ModifiedPath": "",
+      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"Spinner_Display_Key\":\"Controle giratório\",\"Spinner_Desc_Key\":\"Permitir que os usuários visualizem o efeito de rotação/carregamento\",\"Spinner_Label_Display_Key\":\"Rótulo\",\"Spinner_Label_Desc_Key\":\"Rótulo do Controle Giratório\",\"Spinner_AccessibleLabel_Display_Key\":\"Rótulo de Acessibilidade\",\"Spinner_AccessibleLabel_Desc_Key\":\"Rótulo da Acessibilidade do componente Giratório\",\"Spinner_Appearance_Display_Key\":\"Aparência\",\"Spinner_Appearance_Desc_Key\":\"Aparência do Controle Giratório\",\"Spinner_LabelPosition_Display_Key\":\"Posição do Rótulo\",\"Spinner_LabelPosition_Desc_Key\":\"Definir posição para o rótulo ao redor do Controle Giratório\",\"Spinner_SpinnerSize_Display_Key\":\"Tamanho do Controle Giratório\",\"Spinner_SpinnerSize_Desc_Key\":\"Definir tamanho do Controle Giratório\",\"Spinner_LabelPosition_Before\":\"Antes\",\"Spinner_LabelPosition_After\":\"Depois\",\"Spinner_LabelPosition_Above\":\"Acima\",\"Spinner_LabelPosition_Below\":\"Abaixo\",\"Spinner_SpinnerSize_Tiny\":\"Muito Pequeno\",\"Spinner_SpinnerSize_ExtraSmall\":\"Extra Pequeno\",\"Spinner_SpinnerSize_Small\":\"Pequeno\",\"Spinner_SpinnerSize_Medium\":\"Médio\",\"Spinner_SpinnerSize_Large\":\"Grande\",\"Spinner_SpinnerSize_ExtraLarge\":\"Extragrande\",\"Spinner_SpinnerSize_Huge\":\"Muito grande\",\"Spinner_Appearance_Primary\":\"Primária\",\"Spinner_Appearance_Inverted\":\"Invertido\"}}}",
+      "Type": 3
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 5,
+      "ModifiedPath": "",
+      "Path": "/PCF/fluentui-react.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 0,
+      "ModifiedPath": "",
+      "Path": "React/16.8.6/16.8.6",
+      "Type": 4
+    }
+  ],
+  "Version": "1.0.17"
+}
