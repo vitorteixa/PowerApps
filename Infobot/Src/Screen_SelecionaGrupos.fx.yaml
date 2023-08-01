@@ -1,0 +1,578 @@
+"Screen_SelecionaGrupos As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
+    OnVisible: |-
+        =ClearCollect(colGruposOffice,'Áreas Concert')
+        
+        //GruposdoOffice365.ListGroups({'$top':999}).value)
+
+    Container5_3 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: |-
+            =ColorValue("#F8F8F8")
+        Height: =Parent.Height
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =5
+
+        Image7_5 As image:
+            AutoDisableOnSelect: =false
+            BorderColor: =RGBA(222, 221, 220, 1)
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(222, 221, 220, 1)
+            DisabledFill: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =578
+            HoverBorderColor: =RGBA(222, 221, 220, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            Image: =
+            OnSelect: =
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: =1245
+            X: =60
+            Y: =128
+            ZIndex: =1
+
+        Image11_3 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Height: =30
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='icons8-esquerda-100'
+            OnSelect: =Navigate(Screen_Home)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =3
+            RadiusBottomRight: =3
+            RadiusTopLeft: =3
+            RadiusTopRight: =3
+            Width: =50
+            X: =60
+            Y: =80
+            ZIndex: =2
+
+        Label1_7 As Rótulo:
+            Color: |-
+                =ColorValue("#0883AA")
+            DisplayMode: =DisplayMode.Edit
+            Font: =Font.'Open Sans'
+            FontSize: =16
+            FontWeight: =FontWeight.Bold
+            Height: =40
+            OnSelect: =Navigate(Screen_Home)
+            PCFTeamsTheme: ="default"
+            Text: ="Início"
+            TextRole: ='Label.TextRole'.Heading2
+            Width: =320
+            X: =110
+            Y: =75
+            ZIndex: =3
+
+        Label1_6 As Rótulo:
+            Alignment: =Align.Center
+            AutoHeight: =true
+            Color: |-
+                =ColorValue("#0883AA")
+            DisplayMode: =DisplayMode.Edit
+            Font: =Font.'Open Sans'
+            FontSize: =18
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            OnSelect: =Navigate(Screen_Home)
+            PCFTeamsTheme: ="default"
+            Text: ="Selecionar grupos"
+            TextRole: ='Label.TextRole'.Heading1
+            Width: =248
+            X: =(Parent.Width/2)-(Self.Width/2)
+            Y: =73
+            ZIndex: =4
+
+        Button1_5 As Botão:
+            BorderRadius: =8
+            DisplayMode: =If(CountRows(glr_membrosGrupos_1.AllItems)<>0,DisplayMode.Edit,DisplayMode.Disabled)
+            FillColor: |-
+                =ColorValue("#0883AA")
+            Font: =Font.'Open Sans'
+            FontSize: =12
+            Height: =40
+            HoverFillColor: |-
+                =ColorValue("#0883AA")
+            HoverTextColor: =
+            OnSelect: |-
+                =//UpdateContext({ctxEnviaComunicado:true});;
+                ForAll(
+                    glr_membrosGrupos_1.AllItems,
+                    Patch(
+                        'Confirmação de Leitura',
+                        Defaults('Confirmação de Leitura'),
+                        {
+                            'Card bot': CurrentItem,
+                            'Email Usuário': ThisRecord.Subtitle8_1.Text,
+                            'Nome Usuário': ThisRecord.Title11_1.Text,
+                            Name: CurrentItem.Name & "_" & ThisRecord.Title11_1.Text,
+                            'Áreas Concert': LookUp(
+                                'Usuários Concert',
+                         Subtitle8_1.Text  =  ThisRecord.Email  //aqui delega
+                            ).'Áreas Concert'
+                         
+                        }
+                    )
+                );
+                Patch(
+                    'Card bot',
+                    LookUp(
+                        'Card bot',
+                        CurrentItem.'Card bot' = 'Card bot'
+                    ),
+                    {'Quantidade de envios': Text(CountRows(glr_membrosGrupos_1.AllItems))}
+                );
+                Notify(
+                    "Comunicado Enviado",
+                    NotificationType.Success
+                );
+                Set(
+                    CurrentItem,
+                    Blank()
+                );
+                Set(
+                    varUncheck,
+                    true
+                );
+                Set(
+                    varUncheck,
+                    false
+                );
+                Clear(colMembros);
+                Clear(ColSelecionado);
+                Clear(colGrupos);
+                Reset(TextBox1_1);
+                Reset(glr_todosGrupos_1);
+                Navigate(Screen_Home)
+            PCFTeamsTheme: ="default"
+            Text: ="Enviar aviso"
+            Width: =143
+            X: =1140
+            Y: =720
+            ZIndex: =5
+
+        Image18 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Height: =TextBox1_1.Height
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='icons8-pesquisar-100'
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =3
+            RadiusBottomRight: =3
+            RadiusTopLeft: =3
+            RadiusTopRight: =3
+            Visible: =false
+            Width: =32
+            X: =TextBox1_1.X
+            Y: =TextBox1_1.Y
+            ZIndex: =6
+
+        Header_4 As Header:
+            ZIndex: =7
+
+        "TextBox1_1 As 'Caixa de texto'":
+            ColorBackground: =RGBA(0, 0, 0, 0)
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =11
+            Height: =32
+            PaddingStart: |
+                =32
+            Required: =false
+            SpellCheck: =true
+            Underlined: =true
+            Value: =""
+            Visible: =false
+            Width: =320
+            X: |
+                =glr_todosGrupos_1.X+15
+            Y: =171
+            ZIndex: =8
+
+        glr_membrosGrupos_1 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
+            BorderColor: =RGBA(243, 242, 241, 1)
+            DelayItemLoading: =true
+            FocusedBorderColor: =RGBA(98, 100, 167, 1)
+            FocusedBorderThickness: =2
+            Height: =536
+            Items: |
+                =colGrupos
+                //FirstN(Distinct(colRegistros; ID); CountRows(colRegistros))
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Controls
+            TemplatePadding: =0
+            TemplateSize: =60
+            Transition: =Transition.Push
+            Width: =840
+            WrapCount: =3
+            X: =463
+            Y: =171
+            ZIndex: =9
+
+            Rectangle11_1 As rectangle:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                DisabledFill: =RGBA(0,0,0,0)
+                Fill: =RGBA(0,0,0,0)
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                Height: =Parent.TemplateHeight
+                HoverFill: =RGBA(0,0,0,0)
+                OnSelect: =Select(Parent)
+                PressedFill: =RGBA(0,0,0,0)
+                TabIndex: =0
+                Width: =280
+                ZIndex: =1
+
+            Image5_1 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Height: =28
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: =If(IsBlankOrError(UsuáriosdoOffice365.UserPhoto(ThisItem.ds_email)),SampleImage,UsuáriosdoOffice365.UserPhoto(ThisItem.ds_email))
+                OnSelect: =Select(Parent)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Width: =30
+                X: =5
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =2
+
+            Title11_1 As Rótulo:
+                Alignment: =Align.Left
+                AutoHeight: =false
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =10
+                FontWeight: =FontWeight.Semibold
+                Height: =20
+                OnSelect: =Select(Parent)
+                PCFTeamsTheme: ="default"
+                TabIndex: =-1
+                Text: =ThisItem.ds_name
+                VerticalAlignment: =VerticalAlign.Middle
+                Width: =190
+                Wrap: =true
+                X: =Image5_1.X+Image5_1.Height+10
+                Y: =10
+                ZIndex: =3
+
+            Subtitle8_1 As Rótulo:
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                FontWeight: =FontWeight.Normal
+                Height: =20
+                OnSelect: =Select(Parent)
+                PCFTeamsTheme: ="default"
+                TabIndex: =-1
+                Text: =ThisItem.ds_email
+                VerticalAlignment: =VerticalAlign.Top
+                Width: =Title11_1.Width
+                X: =Image5_1.X+Image5_1.Height+10
+                Y: =Title11_1.Y+Title11_1.Height+1
+                ZIndex: =4
+
+            Image13_1 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Height: =25
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: ='icons8-excluir-100'
+                OnSelect: =Remove(colGrupos,ThisItem)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                Width: =25
+                X: =237
+                Y: =18
+                ZIndex: =6
+
+            Subtitle8_2 As Rótulo:
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =7.5
+                FontWeight: =FontWeight.Semibold
+                Height: =18
+                OnSelect: =Select(Parent)
+                PCFTeamsTheme: ="default"
+                TabIndex: =-1
+                Text: |-
+                    ="[" & LookUp(
+                        'Usuários Concert',
+                        ThisItem.ds_email = Email,
+                        'Áreas Concert'
+                    ).Name & "]"
+                VerticalAlignment: =VerticalAlign.Top
+                Width: =Title11_1.Width
+                X: =43
+                Y: =0
+                ZIndex: =7
+
+        Rectangle8 As rectangle:
+            BorderColor: =RGBA(243, 242, 241, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(222, 221, 220, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(98, 100, 167, 1)
+            FocusedBorderColor: =RGBA(98, 100, 167, 1)
+            Height: =Image7_5.Height
+            HoverFill: =RGBA(98, 100, 167, 1)
+            PressedFill: =RGBA(98, 100, 167, 1)
+            Width: =2
+            X: =463
+            Y: =129
+            ZIndex: =10
+
+        Label1_9 As Rótulo:
+            Alignment: =Align.Center
+            AutoHeight: =true
+            Color: |-
+                =ColorValue("#0883AA")
+            DisplayMode: =DisplayMode.Edit
+            Font: =Font.'Open Sans'
+            FontSize: =14
+            FontWeight: =FontWeight.Semibold
+            Height: =41
+            OnSelect: =Navigate(Screen_Home)
+            PCFTeamsTheme: ="default"
+            Text: ="Usuários selecionados"
+            TextRole: ='Label.TextRole'.Heading2
+            Width: =248
+            X: |
+                =774
+            Y: =Label1_10.Y
+            ZIndex: =11
+
+        Label4_1 As Rótulo:
+            Alignment: =Align.Center
+            DisplayMode: =DisplayMode.Edit
+            FontWeight: =FontWeight.Semibold
+            Height: =29
+            PCFTeamsTheme: ="default"
+            Text: =CountRows(glr_membrosGrupos_1.AllItems)&" Pessoas"
+            Width: =225
+            X: =1058
+            Y: =135
+            ZIndex: =12
+
+        Icon3_1 As icon.Erase:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: |-
+                =ColorValue("#0883AA")
+            DisabledBorderColor: =RGBA(243, 242, 241, 1)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =0
+            Height: =32
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Erase
+            OnSelect: |-
+                =Set(varUncheck,true);
+                Set(varUncheck,false);
+                Clear(colMembros);
+                Clear(ColSelecionado);
+                Clear(colGrupos);
+                Reset(TextBox1_1);
+                Reset(glr_todosGrupos_1);
+                ClearCollect(colGruposOffice,'Áreas Concert')
+                //ClearCollect(colGruposOffice;GruposdoOffice365.ListGroups({'$top':999}).value);;
+                //Clear(colTesteVitor)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =32
+            X: =394
+            Y: =171
+            ZIndex: =13
+
+        Label1_10 As Rótulo:
+            Alignment: =Align.Center
+            AutoHeight: =true
+            Color: |-
+                =ColorValue("#0883AA")
+            DisplayMode: =DisplayMode.Edit
+            Font: =Font.'Open Sans'
+            FontSize: =14
+            FontWeight: =FontWeight.Semibold
+            Height: =41
+            OnSelect: =Navigate(Screen_Home)
+            PCFTeamsTheme: ="default"
+            Text: |
+                ="Selecionar grupos"
+            TextRole: ='Label.TextRole'.Heading2
+            Width: =248
+            X: =110
+            Y: =129
+            ZIndex: =14
+
+        glr_todosGrupos_1 As gallery.BrowseLayout_Vertical_TwoTextVariant_pcfCore:
+            BorderColor: =RGBA(243, 242, 241, 1)
+            DelayItemLoading: =true
+            FocusedBorderColor: =RGBA(98, 100, 167, 1)
+            FocusedBorderThickness: =2
+            Height: =536
+            Items: |-
+                =If(
+                    IsBlank(TextBox1_1.Value),
+                    colGruposOffice,
+                    Search(
+                        colGruposOffice,
+                        TextBox1_1.Value,
+                        "ds_name"
+                    )
+                )
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            OnSelect: =Parent.Selected
+            ShowNavigation: =true
+            ShowScrollbar: =false
+            TemplatePadding: =0
+            TemplateSize: =55
+            Width: =370
+            X: =60
+            Y: =171
+            ZIndex: =15
+
+            Rectangle12_1 As rectangle:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                DisabledFill: =RGBA(0,0,0,0)
+                Fill: =RGBA(0,0,0,0)
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                Height: =Parent.TemplateHeight 
+                HoverFill: =RGBA(0,0,0,0)
+                OnSelect: =Select(Parent);
+                PressedFill: =RGBA(0,0,0,0)
+                TabIndex: =0
+                Width: =Parent.TemplateWidth
+                ZIndex: =1
+
+            Title12_1 As Rótulo:
+                AutoHeight: =true
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =12
+                FontWeight: =FontWeight.Semibold
+                Height: =31
+                OnSelect: =Select(Parent)
+                PCFTeamsTheme: ="default"
+                TabIndex: =-1
+                Text: =ThisItem.Name
+                VerticalAlignment: =VerticalAlign.Top
+                Width: =286
+                X: =61
+                Y: =11
+                ZIndex: =2
+
+            "Checkbox1_2 As 'Caixa de seleção'":
+                BoxSide: ='Checkbox.BoxSide'.Start
+                Checked: =LookUp(ColSelecionado,ThisItem.Name = Name ,true)
+                DisplayMode: =DisplayMode.Edit
+                Height: =Rectangle12_1.Height
+                Label: =""
+                OnCheck: |-
+                    =
+                        Collect(
+                            ColSelecionado,
+                            ThisItem
+                        );
+                        Collect(
+                            colMembros,
+                            Filter(
+                                'Usuários Concert',
+                                ThisItem.'Áreas Concert' = 'Áreas Concert'.'Áreas Concert'
+                            )
+                        )
+                    ;
+                    ClearCollect(colGrupos,
+                    GroupBy(colMembros,"ds_email","ds_name","membros do grupo"))
+                    
+                    /*
+                    ForAll(
+                        colMembros;
+                        Collect(
+                            colTesteVitor;
+                            UsuáriosdoOffice365.SearchUser({searchTerm:ThisItem.mail})
+                        ))
+                    
+                    
+                        GruposdoOffice365.ListGroupMembers(
+                            ThisItem.id;
+                            {'$top': 500}
+                        ).value
+                    );;
+                    ClearCollect(
+                        colGrupos;
+                        GroupBy(
+                            colMembros;
+                            "id";
+                            "displayName";
+                            "grupoEmails"
+                        )
+                    );;
+                    
+                    )*/
+                OnSelect: =Select(Parent)
+                OnUncheck: |-
+                    =ForAll(
+                        glr_membrosGrupos_1.AllItems,
+                        RemoveIf(
+                            colMembros,
+                            ThisItem.'Áreas Concert' = 'Áreas Concert'.'Áreas Concert'
+                        );
+                        RemoveIf(
+                            ColSelecionado,
+                            ThisItem.'Áreas Concert' = 'Áreas Concert'
+                        )
+                    );
+                    ClearCollect(
+                        colGrupos,
+                        GroupBy(
+                            colMembros,
+                            "ds_email",
+                            "ds_name",
+                            "membros do grupo"
+                        )
+                    );
+                    Set(
+                        varUncheck,
+                        false
+                    )
+                PCFTeamsTheme: ="default"
+                Width: =Rectangle12_1.Width-Self.X
+                X: =12
+                Y: =0
+                ZIndex: =4
+

@@ -1,0 +1,120 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ds_confirmacaodeleituras",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ds_confirmacaodeleitura",
+    "MaxGetRowsCount": 500,
+    "Name": "Confirmação de Leitura",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Proprietário",
+      "createdby": "Criada Por",
+      "createdon": "Data de Criação",
+      "createdonbehalfby": "Criado por (Delegado)",
+      "ds_areasconcert": "Áreas Concert",
+      "ds_cardbot": "Card bot",
+      "ds_confirmacaodeleitura": "Confirmação de Leitura (ds_confirmacaodeleitura)",
+      "ds_confirmacaodeleitura_AsyncOperations": "Trabalhos do Sistema",
+      "ds_confirmacaodeleitura_BulkDeleteFailures": "Falhas da Exclusão em Massa",
+      "ds_confirmacaodeleitura_PrincipalObjectAttributeAccesses": "Compartilhamento de Campo",
+      "ds_confirmacaodeleitura_ProcessSession": "Sessões de Processo",
+      "ds_confirmacaodeleituraid": "Confirmação de Leitura (ds_confirmacaodeleituraid)",
+      "ds_emailusuario": "Email Usuário",
+      "ds_name": "Name",
+      "ds_nomeusuario": "Nome Usuário",
+      "ds_quantidadereenvios": "Quantidade de Reenvios",
+      "ds_tempoderesposta": "Tempo de resposta",
+      "importsequencenumber": "Número de Sequência de Importação",
+      "modifiedby": "Modificado Por",
+      "modifiedon": "Data de Modificação",
+      "modifiedonbehalfby": "Modificado por (Delegado)",
+      "overriddencreatedon": "Registro Criado em",
+      "owningbusinessunit": "Unidade de Negócios Proprietária",
+      "owningteam": "Equipe Proprietária",
+      "owninguser": "Usuário Proprietário",
+      "statecode": "Status",
+      "statuscode": "Razão do Status",
+      "timezoneruleversionnumber": "Número de Versão da Regra de Fuso Horário",
+      "utcconversiontimezonecode": "Código de Fuso Horário de Conversão de UTC",
+      "versionnumber": "Número da Versão"
+    },
+    "PreferredName": "Confirmação de Leitura",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Confirmação de Leitura (Modos de exibição)",
+    "Name": "_ds_confirmacaodeleitura_views",
+    "RelatedEntityName": "Confirmação de Leitura",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0cd6cbb8-5ff8-47dd-b116-ad78da57ebe3": "Exibição de Consulta de Confirmação de Leitura",
+      "14ad4191-8da0-489d-8550-35f55dc5add6": "Confirmação de Leitura Inativos(as)",
+      "7262a92c-5c97-4422-87a5-ef296790ba07": "Confirmação de Leitura Ativos(as)",
+      "781f1945-3fc4-46e8-9ef6-2306211cedf7": "Exibição Associada de Confirmação de Leitura",
+      "fc619b9d-3397-4f41-8133-ba47e19428aa": "Exibição de Localização Avançada de Confirmação de Leitura"
+    }
+  },
+  {
+    "DisplayName": "Confirmação de Leitura (Confirmação de Leitura)",
+    "Name": "ds_confirmacaodeleitura_ds_confirmacaodeleitura",
+    "OptionSetInfoNameMapping": {
+      "0": "Não",
+      "1": "Sim"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ds_confirmacaodeleitura",
+        "OptionSetReferenceEntityName": "Confirmação de Leitura"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ds_confirmacaodeleitura",
+    "RelatedEntityName": "Confirmação de Leitura",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Confirmação de Leitura)",
+    "Name": "ds_confirmacaodeleitura_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Ativo(a)",
+      "1": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Confirmação de Leitura"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Confirmação de Leitura",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razão do Status (Confirmação de Leitura)",
+    "Name": "ds_confirmacaodeleitura_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Ativo(a)",
+      "2": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Confirmação de Leitura"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Confirmação de Leitura",
+    "Type": "OptionSetInfo"
+  }
+]

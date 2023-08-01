@@ -1,0 +1,1757 @@
+"Screen_VisualizarAvisos As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
+    OnVisible: =Refresh('Card bot');Refresh('Confirmação de Leitura')
+
+    cnt_bodyVisualizarAvisos As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: |-
+            =ColorValue("#F8F8F8")
+        Height: =Parent.Height
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =2
+
+        Image1 As image:
+            AccessibleLabel: ="baixar estatísticas"
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Height: =32
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='icons8-baixar-100'
+            OnSelect: |-
+                =Download("https://concertbh.sharepoint.com/sites/marketing-ComunicaConcert/Documentos%20Compartilhados/ComunicaConcert/InfoConcert_extracao.xlsx")
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =3
+            RadiusBottomRight: =3
+            RadiusTopLeft: =3
+            RadiusTopRight: =3
+            Tooltip: ="baixar estatísticas"
+            Width: =32
+            X: =1256
+            Y: =105
+            ZIndex: =4
+
+        Label1_11 As Rótulo:
+            Alignment: =Align.Center
+            AutoHeight: =true
+            Color: |-
+                =ColorValue("#0883AA")
+            DisplayMode: =DisplayMode.Edit
+            Font: =Font.'Open Sans'
+            FontSize: =18
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            OnSelect: =
+            PCFTeamsTheme: ="default"
+            Text: ="Visualizar avisos"
+            TextRole: ='Label.TextRole'.Heading1
+            Width: =248
+            X: =(Parent.Width/2)-(Self.Width/2)
+            Y: =71
+            ZIndex: =5
+
+        img_backgroundVisualizarAviso As image:
+            AutoDisableOnSelect: =false
+            BorderColor: =RGBA(222, 221, 220, 1)
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =557
+            HoverBorderColor: =RGBA(222, 221, 220, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            Image: =
+            OnSelect: =
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: =1245
+            X: =60
+            Y: =150
+            ZIndex: =6
+
+        Gallery2 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
+            BorderColor: =RGBA(243, 242, 241, 1)
+            BorderStyle: =BorderStyle.None
+            DelayItemLoading: =true
+            FocusedBorderColor: =RGBA(98, 100, 167, 1)
+            FocusedBorderThickness: =2
+            Height: =541
+            Items: |
+                ='Card bot'
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =48
+            Width: =img_backgroundVisualizarAviso.Width
+            X: =img_backgroundVisualizarAviso.X
+            Y: |+
+                =img_backgroundVisualizarAviso.Y
+                
+            ZIndex: =7
+
+            Rectangle6 As rectangle:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(222, 221, 220, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(222, 221, 220, 1)
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                Height: =1
+                HoverFill: =RGBA(98, 100, 167, 1)
+                OnSelect: =Select(Parent)
+                PressedFill: =RGBA(98, 100, 167, 1)
+                Width: =Parent.Width
+                Y: =46
+                ZIndex: =1
+
+            Rectangle7 As rectangle:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(222, 221, 220, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(222, 221, 220, 1)
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                Height: =48
+                HoverFill: =RGBA(98, 100, 167, 1)
+                PressedFill: =RGBA(98, 100, 167, 1)
+                Width: =1
+                X: |
+                    =Subtitle4.X -10
+                ZIndex: =2
+
+            Rectangle7_1 As rectangle:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(222, 221, 220, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(222, 221, 220, 1)
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                Height: =48
+                HoverFill: =RGBA(98, 100, 167, 1)
+                PressedFill: =RGBA(98, 100, 167, 1)
+                Width: =1
+                X: |+
+                    =Title4.X -10
+                    
+                    
+                ZIndex: =3
+
+            Rectangle7_2 As rectangle:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(222, 221, 220, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(222, 221, 220, 1)
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                Height: =48
+                HoverFill: =RGBA(98, 100, 167, 1)
+                PressedFill: =RGBA(98, 100, 167, 1)
+                Width: =1
+                X: |+
+                    =img_editar.X -10
+                    
+                    
+                ZIndex: =4
+
+            Rectangle7_3 As rectangle:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(222, 221, 220, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(222, 221, 220, 1)
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                Height: =48
+                HoverFill: =RGBA(98, 100, 167, 1)
+                PressedFill: =RGBA(98, 100, 167, 1)
+                Width: =1
+                X: |+
+                    =img_editar.X +img_editar.Width+10
+                    
+                ZIndex: =5
+
+            Image10 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: |-
+                    =
+                    If(IsBlank(ThisItem.'URL Imagem'),SampleImage,ThisItem.'URL Imagem')
+                OnSelect: =Select(Parent)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                Width: =40
+                X: =12
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =6
+
+            Title4 As Rótulo:
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =11
+                FontWeight: =FontWeight.Normal
+                Height: =29
+                OnSelect: =Select(Parent)
+                PCFTeamsTheme: ="default"
+                TabIndex: =-1
+                Text: =ThisItem.Name
+                VerticalAlignment: =VerticalAlign.Top
+                Width: =253
+                Wrap: =true
+                X: =74
+                Y: =8
+                ZIndex: =7
+
+            img_editar As image:
+                AccessibleLabel: ="editar avisos"
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Height: =32
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: ='icons8-editar-100'
+                OnSelect: |-
+                    =Set(CurrentItem,ThisItem);
+                    UpdateContext({selectedRecord:Parent.Selected, ctxEdicao:true})
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                Tooltip: ="editar avisos"
+                Width: =32
+                X: |
+                    =img_excluir.X-img_excluir.Width-20
+                Y: =8
+                ZIndex: =8
+
+            img_excluir As image:
+                AccessibleLabel: ="apagar aviso"
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Height: =32
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: ='icons8-excluir-100'
+                OnSelect: |-
+                    =Set(
+                        CurrentItem,
+                        ThisItem
+                    );
+                    Select(Parent);
+                    UpdateContext(
+                        {
+                            selectedRecord: Parent.Selected,
+                            ctxExclusao: true
+                        }
+                    )
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                Tooltip: ="apagar aviso"
+                Width: =32
+                X: =1195
+                Y: =8
+                ZIndex: =9
+
+            Subtitle4_1 As Rótulo:
+                Alignment: =Align.Center
+                AutoHeight: =false
+                DisplayMode: =DisplayMode.Edit
+                Font: =Font.'Open Sans'
+                FontSize: =10
+                FontWeight: =FontWeight.Normal
+                Height: =31
+                OnSelect: =Select(Parent)
+                PCFTeamsTheme: ="default"
+                TabIndex: =-1
+                Text: |-
+                    =CountRows(
+                        Filter(
+                            'Confirmação de Leitura',
+                            'Card bot'.'Card bot' = ThisItem.'Card bot' && 'Confirmação de Leitura (ds_confirmacaodeleitura)' = true
+                        )
+                    ) & "/" & CountRows(
+                        Filter(
+                            'Confirmação de Leitura',
+                            'Card bot'.'Card bot' = ThisItem.'Card bot' ))
+                VerticalAlignment: =VerticalAlign.Middle
+                Width: =55
+                X: =973
+                Y: =8
+                ZIndex: =10
+
+            Rectangle7_4 As rectangle:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(222, 221, 220, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(222, 221, 220, 1)
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                Height: =48
+                HoverFill: =RGBA(98, 100, 167, 1)
+                PressedFill: =RGBA(98, 100, 167, 1)
+                Width: =1
+                X: =Subtitle4_1.X -10
+                ZIndex: =11
+
+            img_visualizar As image:
+                AccessibleLabel: ="visualizar usuários"
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Height: =32
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: ='icons8-eye-100'
+                OnSelect: |-
+                    =Set(CurrentItem,ThisItem);UpdateContext({ctxUsuarios:true})
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                Tooltip: ="visualizar usuários"
+                Width: =32
+                X: =1032
+                Y: =8
+                ZIndex: =12
+
+            img_reenvio As image:
+                AccessibleLabel: ="reenviar aviso"
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                DisplayMode: |-
+                    =If(
+                        CountRows(
+                            Filter(
+                                'Confirmação de Leitura',
+                                'Card bot'.'Card bot' = ThisItem.'Card bot' && 'Confirmação de Leitura (ds_confirmacaodeleitura)'
+                            )
+                        ) = Value(ThisItem.'Quantidade de envios'), DisplayMode.Disabled,
+                        DisplayMode.Edit
+                       
+                    )
+                Height: =32
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: |-
+                    =If(
+                        Self.DisplayMode = DisplayMode.Edit,
+                        'icons8-refresh-mail-100',
+                        'icons8-refresh-mail-_disabled-100'
+                    )
+                OnSelect: |
+                    =Set(
+                        CurrentItem,
+                        ThisItem
+                    );
+                    UpdateContext({ctxReenvio: true});
+                    ClearCollect(
+                        colReenvio,
+                        Filter(
+                            'Confirmação de Leitura',
+                            ('Card bot'.'Card bot' = ThisItem.'Card bot') And 'Confirmação de Leitura (ds_confirmacaodeleitura)' = false
+                        )
+                    );
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                Tooltip: |-
+                    =If(
+                        Self.DisplayMode = DisplayMode.Edit, "reenviar aviso","Aviso já visualizado por todos"
+                        
+                       
+                    )
+                Width: =32
+                X: =1086
+                Y: =8
+                ZIndex: =13
+
+            Rectangle7_5 As rectangle:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(222, 221, 220, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(222, 221, 220, 1)
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                Height: =48
+                HoverFill: =RGBA(98, 100, 167, 1)
+                PressedFill: =RGBA(98, 100, 167, 1)
+                Width: =1
+                X: |+
+                    =img_reenvio.X -10
+                    
+                    
+                    
+                ZIndex: =14
+
+            Subtitle4 As Rótulo:
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                OnSelect: =Select(Parent)
+                PCFTeamsTheme: ="default"
+                TabIndex: =-1
+                Text: =ThisItem.Título
+                VerticalAlignment: =VerticalAlign.Top
+                Width: =239
+                X: =378
+                Y: =10
+                ZIndex: =17
+
+        comp_headerVisualizarAvisos As Header:
+            ZIndex: =8
+
+        cnt_edicao As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(230, 230, 230, 0.73)
+            Height: =Parent.Height
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Visible: =ctxEdicao
+            Width: =Parent.Width
+            ZIndex: =9
+
+            Image7_2 As image:
+                AutoDisableOnSelect: =false
+                BorderColor: =RGBA(222, 221, 220, 1)
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(255, 255, 255, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =716
+                HoverBorderColor: =RGBA(222, 221, 220, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                Image: =
+                OnSelect: =
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Width: =829
+                X: =269
+                Y: =(Parent.Height/2)-(Self.Height/2)
+                ZIndex: =1
+
+            EditForm1_1 As form:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                DataSource: ='Card bot'
+                DefaultMode: =If(ctxEdicao, FormMode.Edit, FormMode.View)
+                Height: =600
+                Item: = Gallery2.Selected
+                NumberOfColumns: =2
+                OnFailure: =Notify("Não é possível salvar. Verifique se há erros no formulário.",NotificationType.Error)
+                OnSuccess: |-
+                    =UpdateContext(
+                        {
+                            CurrentItem: Self.LastSubmit,
+                            ctxEdicao: false
+                        }
+                    );
+                    
+                    Notify(
+                        "Aviso editado com sucesso.",
+                        NotificationType.Success
+                    )
+                Width: =600
+                X: =383
+                Y: =(Parent.Height/2)-(Self.Height/2)
+                ZIndex: =2
+
+                "'URL botão 1_DataCard1_1' As typedDataCard.pcfCoreUrlEditCard":
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ds_urlbotao1"
+                    Default: =ThisItem.'URL botão 1'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Card bot'],DataSourceInfo.DisplayName,"ds_urlbotao1")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    Required: =false
+                    Update: =DataCardValue10_1.Value
+                    Width: =711
+                    WidthFit: =true
+                    X: =0
+                    Y: =5
+                    ZIndex: =1
+
+                    DataCardKey10_1 As Rótulo:
+                        AutoHeight: =true
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        Height: =22
+                        PCFTeamsTheme: ="default"
+                        Text: ="Link botão esquerdo"
+                        Tooltip: =Parent.DisplayName
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue10_1 As 'Caixa de texto'":
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        FontSize: =10.5
+                        Height: =32
+                        Mode: ="SingleLine"
+                        PCFTeamsTheme: ="default"
+                        Required: =Parent.Required
+                        Tooltip: =Parent.DisplayName
+                        Value: =Parent.Default
+                        Width: =Parent.Width -40
+                        X: =24
+                        Y: =DataCardKey10_1.Y + DataCardKey10_1.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage10_1 As Rótulo:
+                        AutoHeight: =true
+                        Color: =Color.Red
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        Height: =30
+                        PCFTeamsTheme: ="default"
+                        Text: =Parent.Error
+                        Tooltip: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue10_1.Y + DataCardValue10_1.Height
+                        ZIndex: =3
+
+                    StarVisible10_1 As Rótulo:
+                        Alignment: =Align.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =20
+                        PCFTeamsTheme: ="default"
+                        Text: ="*"
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey10_1.Y
+                        ZIndex: =4
+
+                Name_DataCard1_1 As typedDataCard.pcfCoreTextualEditCard:
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ds_name"
+                    Default: =ThisItem.Name
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Card bot'],DataSourceInfo.DisplayName,"ds_name")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    MaxLength: =DataSourceInfo([@'Card bot'], DataSourceInfo.MaxLength, "ds_name")
+                    Required: =true
+                    Update: =DataCardValue1_1.Value
+                    Visible: =false
+                    Width: =710
+                    WidthFit: =true
+                    X: =0
+                    Y: =0
+                    ZIndex: =22
+
+                    DataCardKey1_1 As Rótulo:
+                        AutoHeight: =true
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        Height: =22
+                        PCFTeamsTheme: ="default"
+                        Text: =Parent.DisplayName
+                        Tooltip: =Parent.DisplayName
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue1_1 As 'Caixa de texto'":
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        FontSize: =10.5
+                        Height: =32
+                        Mode: ="SingleLine"
+                        PCFTeamsTheme: ="default"
+                        Required: =Parent.Required
+                        Tooltip: =Parent.DisplayName
+                        Value: ="Card_"&DataCardValue2_1.Value&"_"&Now()
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey1_1.Y + DataCardKey1_1.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage1_1 As Rótulo:
+                        AutoHeight: =true
+                        Color: =Color.Red
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        Height: =30
+                        PCFTeamsTheme: ="default"
+                        Text: =Parent.Error
+                        Tooltip: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue1_1.Y + DataCardValue1_1.Height
+                        ZIndex: =3
+
+                    StarVisible1_1 As Rótulo:
+                        Alignment: =Align.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        PCFTeamsTheme: ="default"
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey1_1.Y
+                        ZIndex: =4
+
+                Título_DataCard1_1 As typedDataCard.pcfCoreTextualEditCard:
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ds_titulo"
+                    Default: =ThisItem.Título
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Card bot'],DataSourceInfo.DisplayName,"ds_titulo")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    MaxLength: =DataSourceInfo([@'Card bot'], DataSourceInfo.MaxLength, "ds_titulo")
+                    Required: =true
+                    Update: =DataCardValue2_1.Value
+                    Width: |
+                        =600
+                    WidthFit: =true
+                    X: =0
+                    Y: =1
+                    ZIndex: =22
+
+                    DataCardKey2_1 As Rótulo:
+                        AutoHeight: =true
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        Height: =22
+                        PCFTeamsTheme: ="default"
+                        Text: =Parent.DisplayName
+                        Tooltip: =Parent.DisplayName
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue2_1 As 'Caixa de texto'":
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        FontSize: =10.5
+                        Height: =32
+                        Mode: ="SingleLine"
+                        PCFTeamsTheme: ="default"
+                        Required: =Parent.Required
+                        Tooltip: =Parent.DisplayName
+                        Value: =Parent.Default
+                        Width: =Parent.Width -40
+                        X: =24
+                        Y: =DataCardKey2_1.Y + DataCardKey2_1.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage2_1 As Rótulo:
+                        AutoHeight: =true
+                        Color: =Color.Red
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        Height: =30
+                        PCFTeamsTheme: ="default"
+                        Text: =Parent.Error
+                        Tooltip: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue2_1.Y + DataCardValue2_1.Height
+                        ZIndex: =3
+
+                    StarVisible2_1 As Rótulo:
+                        Alignment: =Align.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        PCFTeamsTheme: ="default"
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey2_1.Y
+                        ZIndex: =4
+
+                Subtítulo_DataCard1_1 As typedDataCard.pcfCoreTextualEditCard:
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ds_subtitulo"
+                    Default: =ThisItem.Subtítulo
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Card bot'],DataSourceInfo.DisplayName,"ds_subtitulo")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    MaxLength: =DataSourceInfo([@'Card bot'], DataSourceInfo.MaxLength, "ds_subtitulo")
+                    Required: =false
+                    Update: =DataCardValue3_1.Value
+                    Width: =711
+                    WidthFit: =true
+                    X: =0
+                    Y: =2
+                    ZIndex: =22
+
+                    DataCardKey3_1 As Rótulo:
+                        AutoHeight: =true
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        Height: =22
+                        PCFTeamsTheme: ="default"
+                        Text: =Parent.DisplayName
+                        Tooltip: =Parent.DisplayName
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue3_1 As 'Caixa de texto'":
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        FontSize: =10.5
+                        Height: =32
+                        Mode: ="SingleLine"
+                        PCFTeamsTheme: ="default"
+                        Required: =Parent.Required
+                        Tooltip: =Parent.DisplayName
+                        Value: =Parent.Default
+                        Width: =Parent.Width -40
+                        X: =24
+                        Y: =DataCardKey3_1.Y + DataCardKey3_1.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage3_1 As Rótulo:
+                        AutoHeight: =true
+                        Color: =Color.Red
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        Height: =30
+                        PCFTeamsTheme: ="default"
+                        Text: =Parent.Error
+                        Tooltip: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue3_1.Y + DataCardValue3_1.Height
+                        ZIndex: =3
+
+                    StarVisible3_1 As Rótulo:
+                        Alignment: =Align.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        PCFTeamsTheme: ="default"
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey3_1.Y
+                        ZIndex: =4
+
+                Descrição_DataCard1_1 As typedDataCard.pcfCoreTextualEditCard:
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ds_descricao"
+                    Default: =ThisItem.Descrição
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Card bot'],DataSourceInfo.DisplayName,"ds_descricao")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =80
+                    MaxLength: =DataSourceInfo([@'Card bot'], DataSourceInfo.MaxLength, "ds_descricao")
+                    Required: =false
+                    Update: =DataCardValue4_1.Value
+                    Width: =711
+                    WidthFit: =true
+                    X: =0
+                    Y: =3
+                    ZIndex: =22
+
+                    DataCardKey4_1 As Rótulo:
+                        AutoHeight: =true
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        Height: =22
+                        PCFTeamsTheme: ="default"
+                        Text: =Parent.DisplayName
+                        Tooltip: =Parent.DisplayName
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue4_1 As 'Caixa de texto'":
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        FontSize: =10.5
+                        Height: =60
+                        Mode: ='TextBox.Mode'.Multiline
+                        PCFTeamsTheme: ="default"
+                        Required: =Parent.Required
+                        SpellCheck: =true
+                        Tooltip: =Parent.DisplayName
+                        Underlined: =true
+                        Value: =Parent.Default
+                        Width: =Parent.Width -40
+                        X: =24
+                        Y: =DataCardKey4_1.Y + DataCardKey4_1.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage4_1 As Rótulo:
+                        AutoHeight: =true
+                        Color: =Color.Red
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        Height: =30
+                        PCFTeamsTheme: ="default"
+                        Text: =Parent.Error
+                        Tooltip: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue4_1.Y + DataCardValue4_1.Height
+                        ZIndex: =3
+
+                    StarVisible4_1 As Rótulo:
+                        Alignment: =Align.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        PCFTeamsTheme: ="default"
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey4_1.Y
+                        ZIndex: =4
+
+                "'Texto botão 1_DataCard1_1' As typedDataCard.pcfCoreTextualEditCard":
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ds_textobotao1"
+                    Default: =ThisItem.'Texto botão 1'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Card bot'],DataSourceInfo.DisplayName,"ds_textobotao1")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    MaxLength: =DataSourceInfo([@'Card bot'], DataSourceInfo.MaxLength, "ds_textobotao1")
+                    Required: =false
+                    Update: =DataCardValue6_1.Value
+                    Width: =711
+                    WidthFit: =true
+                    X: =0
+                    Y: =4
+                    ZIndex: =22
+
+                    DataCardKey6_1 As Rótulo:
+                        AutoHeight: =true
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        Height: =22
+                        PCFTeamsTheme: ="default"
+                        Text: ="Texto botão esquerdo"
+                        Tooltip: =Parent.DisplayName
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue6_1 As 'Caixa de texto'":
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        FontSize: =10.5
+                        Height: =32
+                        Mode: ="SingleLine"
+                        PCFTeamsTheme: ="default"
+                        Required: =Parent.Required
+                        Tooltip: =Parent.DisplayName
+                        Value: =Parent.Default
+                        Width: =Parent.Width -40
+                        X: =24
+                        Y: =DataCardKey6_1.Y + DataCardKey6_1.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage6_1 As Rótulo:
+                        AutoHeight: =true
+                        Color: =Color.Red
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        Height: =30
+                        PCFTeamsTheme: ="default"
+                        Text: =Parent.Error
+                        Tooltip: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue6_1.Y + DataCardValue6_1.Height
+                        ZIndex: =3
+
+                    StarVisible6_1 As Rótulo:
+                        Alignment: =Align.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        PCFTeamsTheme: ="default"
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey6_1.Y
+                        ZIndex: =4
+
+                "'URL da imagem_DataCard1_1' As typedDataCard.pcfCoreTextualEditCard":
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ds_urlimagem"
+                    Default: =ThisItem.'URL Imagem'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Card bot'],DataSourceInfo.DisplayName,"ds_urlimagem")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =174
+                    MaxLength: =DataSourceInfo([@'Card bot'], DataSourceInfo.MaxLength, "ds_urlimagem")
+                    Required: =false
+                    Update: =DataCardValue5_1.Value
+                    Width: =711
+                    WidthFit: =true
+                    X: =0
+                    Y: =6
+                    ZIndex: =22
+
+                    DataCardKey5_1 As Rótulo:
+                        AutoHeight: =true
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        Height: =22
+                        PCFTeamsTheme: ="default"
+                        Text: =Parent.DisplayName
+                        Tooltip: =Parent.DisplayName
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Visible: =false
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue5_1 As 'Caixa de texto'":
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        FontSize: =10.5
+                        Height: =32
+                        Mode: ="SingleLine"
+                        PCFTeamsTheme: ="default"
+                        Required: =Parent.Required
+                        Tooltip: =Parent.DisplayName
+                        Value: |-
+                            =If(IsBlank(AddPicture3_1),ThisItem.'URL Imagem',"https://concertbh.sharepoint.com/Documentos%20Compartilhados/ImagensInfoBot/"&AddPicture3_1.FileName)
+                        Visible: =false
+                        Width: =Parent.Width -40
+                        X: =24
+                        Y: =DataCardKey5_1.Y + DataCardKey5_1.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage5_1 As Rótulo:
+                        AutoHeight: =true
+                        Color: =Color.Red
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =9
+                        Height: =30
+                        PCFTeamsTheme: ="default"
+                        Text: =Parent.Error
+                        Tooltip: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue5_1.Y + DataCardValue5_1.Height
+                        ZIndex: =3
+
+                    StarVisible5_1 As Rótulo:
+                        Alignment: =Align.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        PCFTeamsTheme: ="default"
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey5_1.Y
+                        ZIndex: =4
+
+                    cnt_AdicionarImagem_1 As groupContainer.manualLayoutContainer:
+                        BorderStyle: =BorderStyle.None
+                        Height: =158
+                        Width: =552
+                        Y: =10
+                        ZIndex: =6
+
+                        Image3_1 As image:
+                            BorderColor: =
+                            BorderThickness: =1
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            DisplayMode: ="Imagem card"
+                            Height: =145
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Image: =If(IsBlank(AddPicture3_1.Media), ThisItem.'URL Imagem', AddPicture3_1.Media)
+                            ImagePosition: =ImagePosition.Fill
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Tooltip: ="Imagem card"
+                            Width: =204
+                            X: =285
+                            Y: =10
+                            ZIndex: =1
+
+                        AddPicture3_1 As addMedia:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(200, 198, 196, 1)
+                            DisabledFill: =RGBA(243, 242, 241, 1)
+                            Fill: |-
+                                =ColorValue("#0883AA")
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =RGBA(255, 255, 255, 1)
+                            HoverFill: |-
+                                =ColorFade(ColorValue("#0883AA"), -10%)
+                            OnChange: |
+                                =//UpdateContext({var64:Substitute(JSON(Image3.Image;JSONFormat.IncludeBinaryData);"""";"")})
+                            PressedBorderColor: =ColorFade(RGBA(98, 100, 167, 1), -50%)
+                            PressedColor: =RGBA(255, 255, 255, 1)
+                            PressedFill: |-
+                                =ColorFade(ColorValue("#0883AA"), -30%)
+                            Size: =10
+                            Text: ="Clique para adicionar uma imagem"
+                            Width: =129
+                            X: =DataCardKey4_2.X
+                            Y: =35
+                            ZIndex: =2
+
+                        DataCardKey4_2 As label:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(37, 36, 35, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(200, 198, 196, 1)
+                            FocusedBorderThickness: =2
+                            Font: =Font.'Segoe UI'
+                            Height: =20
+                            PaddingLeft: =0
+                            Size: =9
+                            Text: ="Adicionar/Alterar imagem"
+                            Width: =171
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =3
+
+            Label1_1 As Rótulo:
+                Alignment: =Align.Center
+                Color: |-
+                    =ColorValue("#0883AA")
+                DisplayMode: =DisplayMode.Edit
+                Font: =Font.'Open Sans'
+                FontSize: =16
+                FontWeight: =FontWeight.Bold
+                Height: =40
+                OnSelect: =Navigate(Screen_Home)
+                PCFTeamsTheme: ="default"
+                Text: ="Editar Aviso"
+                TextRole: ='Label.TextRole'.Heading2
+                Width: =320
+                X: =523
+                Y: =55
+                ZIndex: =4
+
+            Button1 As Botão:
+                BorderRadius: =8
+                DisplayMode: =DisplayMode.Edit
+                FillColor: |-
+                    =ColorValue("#0883AA")
+                Font: =Font.'Open Sans'
+                FontSize: =12
+                Height: =40
+                HoverFillColor: |-
+                    =ColorValue("#0883AA")
+                HoverTextColor: =
+                OnSelect: |-
+                    =GruposdoOffice365.HttpRequest(
+                        "https://graph.microsoft.com/v1.0/sites/744a769e-3b6a-4c7b-bcb8-3d0b19696935/drives/b!nnZKdGo7e0y8uD0LGWlpNUeHsontCpxNs2w_5fHnTb37wcVGp82yRLNhxxLh7y6n/root:/imagensinfobot/" & AddPicture3_1.FileName & ":/content",
+                        "PUT",
+                        AddPicture3_1.Media
+                    );SubmitForm(EditForm1_1)
+                PCFTeamsTheme: ="default"
+                Text: ="Salvar"
+                Width: =143
+                X: =Button1_3.X+Button1_3.Width+50
+                Y: =684
+                ZIndex: =5
+
+            Button1_3 As Botão:
+                BorderRadius: =8
+                DisplayMode: =DisplayMode.Edit
+                FillColor: |-
+                    =ColorValue("#0883AA")
+                Font: =Font.'Open Sans'
+                FontSize: =12
+                Height: =40
+                HoverFillColor: |-
+                    =ColorValue("#0883AA")
+                HoverTextColor: =
+                OnSelect: |-
+                    =UpdateContext({ctxEdicao:false})
+                PCFTeamsTheme: ="default"
+                Text: ="Retornar"
+                Width: =143
+                X: =523
+                Y: =684
+                ZIndex: =6
+
+        cnt_reenvio As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(230, 230, 230, 0.8)
+            Height: =Parent.Height
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Visible: =ctxReenvio
+            Width: =Parent.Width
+            ZIndex: =10
+
+            gal_reenvios As gallery.BrowseLayout_Vertical_OneTextVariant_pcfCore:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                DelayItemLoading: =true
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 1)
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                FocusedBorderThickness: =2
+                Height: =743
+                Items: =colReenvio
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =32
+                Width: =260
+                X: =1105
+                Y: =25
+                ZIndex: =1
+
+                Rectangle1 As rectangle:
+                    BorderColor: =RGBA(243, 242, 241, 1)
+                    DisabledFill: =RGBA(0,0,0,0)
+                    Fill: =RGBA(0,0,0,0)
+                    FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                    Height: =Parent.TemplateHeight
+                    HoverFill: =RGBA(0,0,0,0)
+                    OnSelect: =Select(Parent)
+                    PressedFill: =RGBA(0,0,0,0)
+                    TabIndex: =0
+                    Width: =Parent.TemplateWidth
+                    ZIndex: =1
+
+                Title1 As Rótulo:
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =10.5
+                    FontWeight: =FontWeight.Normal
+                    Height: =24
+                    OnSelect: =Select(Parent)
+                    PCFTeamsTheme: ="default"
+                    TabIndex: =-1
+                    Text: =ThisItem.'Email Usuário'
+                    VerticalAlignment: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - 24
+                    X: =12
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2) - 2
+                    ZIndex: =2
+
+            "Spinner1 As 'Controle giratório'":
+                AccessibleLabel: ="Spinner carregamento reenvio"
+                Appearance: ='Spinner.Appearance'.Primary
+                DisplayMode: =DisplayMode.Edit
+                Height: =768
+                Label: ="Reenviando, não saia da tela"
+                LabelPosition: ='Spinner.LabelPosition'.Below
+                PCFTeamsTheme: ="default"
+                SpinnerSize: ='Spinner.SpinnerSize'.Huge
+                Visible: =ctxLoading
+                Width: =1365
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+            Image7_7 As image:
+                AutoDisableOnSelect: =false
+                BorderColor: =RGBA(222, 221, 220, 1)
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(255, 255, 255, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =32
+                HoverBorderColor: =RGBA(222, 221, 220, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                Image: =
+                OnSelect: =
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Width: =261
+                X: =1105
+                ZIndex: =8
+
+            Label2 As Rótulo:
+                Alignment: =Align.Justify
+                AutoHeight: =true
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =12
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                PCFTeamsTheme: ="default"
+                Text: |-
+                    ="Reenvio para:"
+                Width: =243
+                X: =1122
+                Y: =0
+                ZIndex: =9
+
+            Group_PopupReenvio As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =9
+
+                Image7_6 As image:
+                    AutoDisableOnSelect: =false
+                    BorderColor: =RGBA(222, 221, 220, 1)
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(255, 255, 255, 1)
+                    DisplayMode: =DisplayMode.Disabled
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =255
+                    HoverBorderColor: =RGBA(222, 221, 220, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    Image: =
+                    OnSelect: =
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Width: =774
+                    X: =(Parent.Width/2)-(Self.Width/2)
+                    Y: =250
+                    ZIndex: =2
+
+                Label1_5 As Rótulo:
+                    Alignment: =Align.Center
+                    Color: |-
+                        =ColorValue("#0883AA")
+                    DisplayMode: =DisplayMode.Edit
+                    Font: =Font.'Open Sans'
+                    FontSize: =16
+                    FontWeight: =FontWeight.Bold
+                    Height: =40
+                    OnSelect: =
+                    PCFTeamsTheme: ="default"
+                    Text: ="Reenviar Aviso"
+                    TextRole: ='Label.TextRole'.Heading2
+                    Width: =320
+                    X: =523
+                    Y: =261
+                    ZIndex: =4
+
+                btn_Ex_1 As Botão:
+                    BorderRadius: =8
+                    DisplayMode: =DisplayMode.Edit
+                    FillColor: |-
+                        =ColorValue("#0883AA")
+                    Font: =Font.'Open Sans'
+                    FontSize: =12
+                    Height: =40
+                    HoverFillColor: |-
+                        =ColorValue("#0883AA")
+                    HoverTextColor: =
+                    OnSelect: |+
+                        =UpdateContext({ctxReenvio: false});
+                        UpdateContext({ctxLoading:true});
+                        ForAll(
+                            gal_reenvios.AllItems,
+                            Patch(
+                                'Confirmação de Leitura',
+                                ThisRecord,
+                                {
+                                    'Quantidade de Reenvios': Value(ThisRecord.'Quantidade de Reenvios') + 1
+                                }
+                            )
+                        );
+                        UpdateContext({ctxLoading:false});
+                        Notify("Aviso reenviado com sucesso.", NotificationType.Success);
+                        
+                    PCFTeamsTheme: ="default"
+                    Text: ="Reenviar"
+                    Width: =143
+                    X: =700
+                    Y: =441
+                    ZIndex: =5
+
+                lbl_confirmaExclusir_1 As Rótulo:
+                    Alignment: =Align.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Font: =Font.'Open Sans'
+                    FontSize: =14
+                    Height: =62
+                    PCFTeamsTheme: ="default"
+                    Text: ="Essa ação irá reenviar o aviso selecionado para os usuários que não visualizaram. Tem certeza que deseja prosseguir?"
+                    Width: =673
+                    X: =346
+                    Y: =326
+                    ZIndex: =6
+
+                btn_retornarExcluir_1 As Botão:
+                    BorderRadius: =8
+                    DisplayMode: =DisplayMode.Edit
+                    FillColor: |-
+                        =ColorValue("#0883AA")
+                    Font: =Font.'Open Sans'
+                    FontSize: =12
+                    Height: =40
+                    HoverFillColor: |-
+                        =ColorValue("#0883AA")
+                    HoverTextColor: =
+                    OnSelect: |-
+                        =UpdateContext({ctxReenvio:false});
+                        UpdateContext({ctxLoading:false});
+                    PCFTeamsTheme: ="default"
+                    Text: ="Retornar"
+                    Width: =143
+                    X: =523
+                    Y: =441
+                    ZIndex: =7
+
+        cnt_exclusao As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(230, 230, 230, 0.8)
+            Height: =Parent.Height
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Visible: =ctxExclusao
+            Width: =Parent.Width
+            ZIndex: =11
+
+            Image7_3 As image:
+                AutoDisableOnSelect: =false
+                BorderColor: =RGBA(222, 221, 220, 1)
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(255, 255, 255, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =255
+                HoverBorderColor: =RGBA(222, 221, 220, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                Image: =
+                OnSelect: =
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Width: =774
+                X: =(Parent.Width/2)-(Self.Width/2)
+                Y: =250
+                ZIndex: =1
+
+            Label1_2 As Rótulo:
+                Alignment: =Align.Center
+                Color: |-
+                    =ColorValue("#0883AA")
+                DisplayMode: =DisplayMode.Edit
+                Font: =Font.'Open Sans'
+                FontSize: =16
+                FontWeight: =FontWeight.Bold
+                Height: =40
+                OnSelect: =Navigate(Screen_Home)
+                PCFTeamsTheme: ="default"
+                Text: ="Remover Aviso"
+                TextRole: ='Label.TextRole'.Heading2
+                Width: =320
+                X: =523
+                Y: =261
+                ZIndex: =4
+
+            btn_Ex As Botão:
+                BorderRadius: =8
+                DisplayMode: =DisplayMode.Edit
+                FillColor: |-
+                    =ColorValue("#0883AA")
+                Font: =Font.'Open Sans'
+                FontSize: =12
+                Height: =40
+                HoverFillColor: |-
+                    =ColorValue("#0883AA")
+                HoverTextColor: =
+                OnSelect: |-
+                    =Remove(
+                        'Card bot',
+                        selectedRecord
+                    );Notify("Aviso removido com sucesso.",NotificationType.Success);UpdateContext({ctxExclusao:false})
+                PCFTeamsTheme: ="default"
+                Text: ="Excluir"
+                Width: =143
+                X: =700
+                Y: =441
+                ZIndex: =5
+
+            lbl_confirmaExclusir As Rótulo:
+                Alignment: =Align.Center
+                DisplayMode: =DisplayMode.Edit
+                Font: =Font.'Open Sans'
+                FontSize: =14
+                Height: =62
+                PCFTeamsTheme: ="default"
+                Text: ="Essa ação irá remover o developer selecionado. Tem certeza que deseja prosseguir?"
+                Width: =673
+                X: =346
+                Y: =326
+                ZIndex: =6
+
+            btn_retornarExcluir As Botão:
+                BorderRadius: =8
+                DisplayMode: =DisplayMode.Edit
+                FillColor: |-
+                    =ColorValue("#0883AA")
+                Font: =Font.'Open Sans'
+                FontSize: =12
+                Height: =40
+                HoverFillColor: |-
+                    =ColorValue("#0883AA")
+                HoverTextColor: =
+                OnSelect: |-
+                    =UpdateContext({ctxExclusao:false})
+                PCFTeamsTheme: ="default"
+                Text: ="Retornar"
+                Width: =143
+                X: =523
+                Y: =441
+                ZIndex: =7
+
+        grp_voltarInicioVisualizarAvisos As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =11
+
+            img_casaVisualizarAvisos As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Height: |
+                    =25
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: ='icons8-casa-100'
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                Width: =25
+                X: =182 
+                Y: =80
+                ZIndex: =1
+
+            img_setaesquerdaVisualizarAvisos As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Height: =30
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: ='icons8-esquerda-100'
+                OnSelect: =Navigate(Screen_Home)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                Width: =50
+                X: =60
+                Y: =80
+                ZIndex: =2
+
+            lbl_inicioVisualizarAvisos As Rótulo:
+                Color: |-
+                    =ColorValue("#0883AA")
+                DisplayMode: =DisplayMode.Edit
+                Font: =Font.'Open Sans'
+                FontSize: =16
+                FontWeight: =FontWeight.Bold
+                Height: =40
+                OnSelect: =Navigate(Screen_Home)
+                PCFTeamsTheme: ="default"
+                Text: ="Início"
+                TextRole: ='Label.TextRole'.Heading2
+                Width: =320
+                X: =110 
+                Y: |
+                    =75
+                ZIndex: =3
+
+        cnt_usuariosVisualizarAvisos As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(230, 230, 230, 0.8)
+            Height: =Parent.Height
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Visible: =ctxUsuarios
+            Width: =Parent.Width
+            ZIndex: =12
+
+            img_bgconfirmaleiturausuarios As image:
+                AutoDisableOnSelect: =false
+                BorderColor: =RGBA(222, 221, 220, 1)
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(222, 221, 220, 1)
+                DisabledFill: =RGBA(255, 255, 255, 1)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =638
+                HoverBorderColor: =RGBA(222, 221, 220, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                Image: =
+                OnSelect: =
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Width: =626
+                X: =(Parent.Width/2)-(Self.Width/2)
+                Y: =50
+                ZIndex: =1
+
+            lbl_titleconfirmaleiturausuarios As Rótulo:
+                Alignment: =Align.Center
+                Color: |-
+                    =ColorValue("#0883AA")
+                DisplayMode: =DisplayMode.Edit
+                Font: =Font.'Open Sans'
+                FontSize: =16
+                FontWeight: =FontWeight.Bold
+                Height: =40
+                OnSelect: =Navigate(Screen_Home)
+                PCFTeamsTheme: ="default"
+                Text: ="Usuários"
+                TextRole: ='Label.TextRole'.Heading2
+                Width: =320
+                X: =522
+                Y: =63
+                ZIndex: =4
+
+            btn_retornarconfirmaleiturausuarios As Botão:
+                BorderRadius: =8
+                DisplayMode: =DisplayMode.Edit
+                FillColor: |-
+                    =ColorValue("#0883AA")
+                Font: =Font.'Open Sans'
+                FontSize: =12
+                Height: =40
+                HoverFillColor: |-
+                    =ColorValue("#0883AA")
+                HoverTextColor: =
+                OnSelect: |-
+                    =UpdateContext({ctxUsuarios:false})
+                PCFTeamsTheme: ="default"
+                Text: ="Retornar"
+                Width: =143
+                X: =612
+                Y: =633
+                ZIndex: =7
+
+            glr_usuariosVisualizarAvisos As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                BorderStyle: =BorderStyle.None
+                DelayItemLoading: =true
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                FocusedBorderThickness: =2
+                Height: =507
+                Items: =Filter('Confirmação de Leitura', 'Card bot'.'Card bot' = Gallery2.Selected.'Card bot')
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =56
+                Width: =579
+                X: =394
+                Y: =115
+                ZIndex: =8
+
+                img_perfilusuarios As image:
+                    BorderColor: =RGBA(230, 230, 230, 1)
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    Height: =32
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Image: =If(IsBlankOrError(UsuáriosdoOffice365.UserPhoto(ThisItem.'Email Usuário')),SampleImage,UsuáriosdoOffice365.UserPhoto(ThisItem.'Email Usuário'))
+                    OnSelect: =Select(Parent)
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    RadiusBottomLeft: =50
+                    RadiusBottomRight: =50
+                    RadiusTopLeft: =50
+                    RadiusTopRight: =50
+                    Width: =32
+                    X: =13
+                    Y: =8
+                    ZIndex: =2
+
+                lbl_nomeusuarios As Rótulo:
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =10.5
+                    FontWeight: =FontWeight.Semibold
+                    Height: =24
+                    OnSelect: =Select(Parent)
+                    PCFTeamsTheme: ="default"
+                    TabIndex: =-1
+                    Text: =ThisItem.'Nome Usuário'& " - ["&LookUp('Usuários Concert',ThisItem.'Email Usuário' = Email).'Áreas Concert'.Name&"]"
+                    VerticalAlignment: =VerticalAlign.Top
+                    Width: =426
+                    X: =img_perfilusuarios.X + img_perfilusuarios.Width + 12
+                    Y: =img_perfilusuarios.Y
+                    ZIndex: =3
+
+                lbl_emailusuarios As Rótulo:
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =9
+                    FontWeight: =FontWeight.Normal
+                    Height: =20
+                    OnSelect: =Select(Parent)
+                    PCFTeamsTheme: ="default"
+                    TabIndex: =-1
+                    Text: =ThisItem.'Email Usuário'
+                    VerticalAlignment: =VerticalAlign.Top
+                    Width: =455
+                    X: =lbl_nomeusuarios.X
+                    Y: =lbl_nomeusuarios.Y + lbl_nomeusuarios.Height - 6
+                    ZIndex: =4
+
+                img_confirmaleiturausuarios As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    Height: =32
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Image: =If(ThisItem.'Confirmação de Leitura (ds_confirmacaodeleitura)' = true,'icons8-eye-100-green','icons8-eye-100-red')
+                    OnSelect: =Select(Parent)
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Width: =32
+                    X: =522
+                    Y: =8
+                    ZIndex: =6
+

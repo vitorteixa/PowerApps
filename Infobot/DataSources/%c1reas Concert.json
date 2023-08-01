@@ -1,0 +1,95 @@
+[
+  {
+    "DisplayName": "Áreas Concert (Modos de exibição)",
+    "Name": "_ds_areasconcert_views",
+    "RelatedEntityName": "Áreas Concert",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1d738ecd-b133-4230-8c52-95d980652942": "Exibição de Consulta de Áreas Concert",
+      "25786ed1-6e9d-46cf-9fc6-8472f13bc6a8": "Exibição de Localização Avançada de Áreas Concert",
+      "5e72b030-89ec-40b2-a57a-1cd93f23a326": "Áreas Concert Ativos(as)",
+      "6e883c16-7fa3-471e-b74d-4478815c702e": "Exibição Associada de Áreas Concert",
+      "c7f6c653-cf0f-480a-83ad-8752baba009e": "Áreas Concert Inativos(as)"
+    }
+  },
+  {
+    "DisplayName": "Status (Áreas Concert)",
+    "Name": "ds_areasconcert_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Ativo(a)",
+      "1": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Áreas Concert"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Áreas Concert",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razão do Status (Áreas Concert)",
+    "Name": "ds_areasconcert_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Ativo(a)",
+      "2": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Áreas Concert"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Áreas Concert",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ds_areasconcerts",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ds_areasconcert",
+    "MaxGetRowsCount": 500,
+    "Name": "Áreas Concert",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Proprietário",
+      "createdby": "Criada Por",
+      "createdon": "Data de Criação",
+      "createdonbehalfby": "Criado por (Delegado)",
+      "ds_areasconcert_AsyncOperations": "Trabalhos do Sistema",
+      "ds_areasconcert_BulkDeleteFailures": "Falhas da Exclusão em Massa",
+      "ds_areasconcert_PrincipalObjectAttributeAccesses": "Compartilhamento de Campo",
+      "ds_areasconcert_ProcessSession": "Sessões de Processo",
+      "ds_areasconcertid": "Áreas Concert",
+      "ds_ConfirmacaodeLeitura_ds_areasconcert_d": "Confirmação de Leitura",
+      "ds_name": "Name",
+      "ds_usuariosconcert_ds_areasconcert_ds_are": "Usuários Concert",
+      "importsequencenumber": "Número de Sequência de Importação",
+      "modifiedby": "Modificado Por",
+      "modifiedon": "Data de Modificação",
+      "modifiedonbehalfby": "Modificado por (Delegado)",
+      "overriddencreatedon": "Registro Criado em",
+      "owningbusinessunit": "Unidade de Negócios Proprietária",
+      "owningteam": "Equipe Proprietária",
+      "owninguser": "Usuário Proprietário",
+      "statecode": "Status",
+      "statuscode": "Razão do Status",
+      "timezoneruleversionnumber": "Número de Versão da Regra de Fuso Horário",
+      "utcconversiontimezonecode": "Código de Fuso Horário de Conversão de UTC",
+      "versionnumber": "Número da Versão"
+    },
+    "PreferredName": "Áreas Concert",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]

@@ -1,0 +1,161 @@
+"Screen_Home As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
+    OnVisible: |-
+        =ClearCollect(colTelaInicio,Table(
+            {
+                titulo: "Visualizar avisos criados",
+                subtitulo: "Explore os avisos criados anteriormente, visualize suas métricas, edite ou exclua",
+                imagem: 'icons8-edit-text-file-100',
+                tela:1
+            },
+            {
+                titulo: "Criar novo aviso",
+                subtitulo: "Componha um novo aviso para envio aos usuários selecionados",
+                imagem: 'icons8-novo-por-cópia-100',
+                tela:2
+            }
+        ))
+
+    cnt_bodyHome As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Semilight
+        Fill: |-
+            =ColorValue("#F8F8F8")
+        Height: =Parent.Height
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =5
+
+        cntv_opcoesHome As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =Parent.Height -comp_headerHome.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width
+            Y: =comp_headerHome.Height
+            ZIndex: =1
+
+            gal_selecaoHome As gallery.BrowseLayout_Vertical_TwoTextOneImageTwoColumnVariant_pcfCore:
+                AccessibleLabel: ="galeria de seleção avisos"
+                AlignInContainer: =AlignInContainer.SetByContainer
+                BorderColor: =RGBA(243, 242, 241, 1)
+                BorderStyle: =BorderStyle.None
+                DelayItemLoading: =true
+                FillPortions: =0
+                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                FocusedBorderThickness: =2
+                Height: =515
+                Items: =colTelaInicio
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: |-
+                    =If(ThisItem.tela =1 ,Navigate(Screen_VisualizarAvisos),Set(
+                        CurrentItem,
+                        Blank()
+                    );Navigate(Screen_CriaCards))
+                TabIndex: =0
+                TemplatePadding: =0
+                TemplateSize: |
+                    =img_bgselecaoHome.Height+10
+                Transition: =Transition.Pop
+                Width: =940
+                WrapCount: =2
+                X: =215
+                Y: =118
+                ZIndex: =1
+
+                img_bgselecaoHome As image:
+                    AccessibleLabel: ="background tela inicial"
+                    AutoDisableOnSelect: =false
+                    BorderColor: =RGBA(222, 221, 220, 1)
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =500
+                    HoverBorderColor: =RGBA(222, 221, 220, 1)
+                    HoverFill: =RGBA(255, 255, 255, 1)
+                    Image: =
+                    OnSelect: =Select(Parent)
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Width: =440
+                    X: =15
+                    Y: =5
+                    ZIndex: =1
+
+                img_selecaoHome As image:
+                    AccessibleLabel: ="Imagem seleção avisos"
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(255, 255, 255, 1)
+                    HoverBorderColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Image: =ThisItem.imagem
+                    OnSelect: =Select(Parent)
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(255, 255, 255, 1)
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Tooltip: ="Imagem seleção avisos"
+                    X: =185
+                    Y: =113
+                    ZIndex: =2
+
+                lbl_titleselecaoHome As Rótulo:
+                    Alignment: =Align.Center
+                    AutoHeight: =false
+                    DisplayMode: =DisplayMode.Edit
+                    Font: ="'Segoe UI', 'Open Sans', sans-serif"
+                    FontSize: =18
+                    FontWeight: =FontWeight.Semibold
+                    Height: =45
+                    OnSelect: =Select(Parent)
+                    PCFTeamsTheme: ="default"
+                    TabIndex: =-1
+                    Text: =ThisItem.titulo
+                    VerticalAlignment: =VerticalAlign.Top
+                    Width: =img_bgselecaoHome.Width
+                    Wrap: =true
+                    X: =15
+                    Y: =225
+                    ZIndex: =3
+
+                lbl_subtitleselecaoHome As Rótulo:
+                    Alignment: =Align.Center
+                    AutoHeight: =false
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =12
+                    FontWeight: =FontWeight.Normal
+                    Height: =100
+                    OnSelect: =Select(Parent)
+                    PCFTeamsTheme: ="default"
+                    TabIndex: =-1
+                    Text: =ThisItem.subtitulo
+                    VerticalAlignment: =VerticalAlign.Top
+                    Width: |
+                        =Parent.TemplateWidth - 30
+                    X: =lbl_titleselecaoHome.X
+                    Y: =lbl_titleselecaoHome.Y+lbl_titleselecaoHome.Height
+                    ZIndex: =4
+
+        comp_headerHome As Header:
+            ZIndex: =2
+

@@ -1,0 +1,95 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ds_usuariosconcerts",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ds_usuariosconcert",
+    "MaxGetRowsCount": 500,
+    "Name": "Usuários Concert",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Proprietário",
+      "createdby": "Criada Por",
+      "createdon": "Data de Criação",
+      "createdonbehalfby": "Criado por (Delegado)",
+      "ds_areasconcert": "Áreas Concert",
+      "ds_email": "Email",
+      "ds_name": "Name",
+      "ds_usuariosconcert_AsyncOperations": "Trabalhos do Sistema",
+      "ds_usuariosconcert_BulkDeleteFailures": "Falhas da Exclusão em Massa",
+      "ds_usuariosconcert_PrincipalObjectAttributeAccesses": "Compartilhamento de Campo",
+      "ds_usuariosconcert_ProcessSession": "Sessões de Processo",
+      "ds_usuariosconcertid": "Usuários Concert",
+      "importsequencenumber": "Número de Sequência de Importação",
+      "modifiedby": "Modificado Por",
+      "modifiedon": "Data de Modificação",
+      "modifiedonbehalfby": "Modificado por (Delegado)",
+      "overriddencreatedon": "Registro Criado em",
+      "owningbusinessunit": "Unidade de Negócios Proprietária",
+      "owningteam": "Equipe Proprietária",
+      "owninguser": "Usuário Proprietário",
+      "statecode": "Status",
+      "statuscode": "Razão do Status",
+      "timezoneruleversionnumber": "Número de Versão da Regra de Fuso Horário",
+      "utcconversiontimezonecode": "Código de Fuso Horário de Conversão de UTC",
+      "versionnumber": "Número da Versão"
+    },
+    "PreferredName": "Usuários Concert",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Usuários Concert (Modos de exibição)",
+    "Name": "_ds_usuariosconcert_views",
+    "RelatedEntityName": "Usuários Concert",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "249d69ec-da95-45b4-b387-9da325abfe86": "Exibição Associada de Usuários Concert",
+      "28e9e890-07cd-4187-b1e8-14f203cbf84c": "Exibição de Localização Avançada de Usuários Concert",
+      "7e25ab6a-0500-4052-80dd-585ef99918ef": "Usuários Concert Ativos(as)",
+      "aa3e871f-0e1d-4e41-81aa-9fef08d89f73": "Usuários Concert Inativos(as)",
+      "f546d623-0f63-4846-9d38-85266e1f771b": "Exibição de Consulta de Usuários Concert"
+    }
+  },
+  {
+    "DisplayName": "Status (Usuários Concert)",
+    "Name": "ds_usuariosconcert_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Ativo(a)",
+      "1": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Usuários Concert"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Usuários Concert",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razão do Status (Usuários Concert)",
+    "Name": "ds_usuariosconcert_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Ativo(a)",
+      "2": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Usuários Concert"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Usuários Concert",
+    "Type": "OptionSetInfo"
+  }
+]

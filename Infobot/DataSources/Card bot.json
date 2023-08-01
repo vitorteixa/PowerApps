@@ -1,0 +1,102 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ds_cardbots",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ds_cardbot",
+    "MaxGetRowsCount": 500,
+    "Name": "Card bot",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Proprietário",
+      "createdby": "Criada Por",
+      "createdon": "Data de Criação",
+      "createdonbehalfby": "Criado por (Delegado)",
+      "ds_cardbot_AsyncOperations": "Trabalhos do Sistema",
+      "ds_cardbot_BulkDeleteFailures": "Falhas da Exclusão em Massa",
+      "ds_cardbot_PrincipalObjectAttributeAccesses": "Compartilhamento de Campo",
+      "ds_cardbot_ProcessSession": "Sessões de Processo",
+      "ds_cardbot_Teams": "Equipes",
+      "ds_cardbotid": "Card bot",
+      "ds_ConfirmacaodeLeitura_ds_cardbot_ds_car": "Confirmação de Leitura",
+      "ds_descricao": "Descrição",
+      "ds_name": "Name",
+      "ds_qtdenvios": "Quantidade de envios",
+      "ds_subtitulo": "Subtítulo",
+      "ds_textobotao1": "Texto botão 1",
+      "ds_titulo": "Título",
+      "ds_urlbotao1": "URL botão 1",
+      "ds_urlimagem": "URL Imagem",
+      "importsequencenumber": "Número de Sequência de Importação",
+      "modifiedby": "Modificado Por",
+      "modifiedon": "Data de Modificação",
+      "modifiedonbehalfby": "Modificado por (Delegado)",
+      "overriddencreatedon": "Registro Criado em",
+      "owningbusinessunit": "Unidade de Negócios Proprietária",
+      "owningteam": "Equipe Proprietária",
+      "owninguser": "Usuário Proprietário",
+      "statecode": "Status",
+      "statuscode": "Razão do Status",
+      "timezoneruleversionnumber": "Número de Versão da Regra de Fuso Horário",
+      "utcconversiontimezonecode": "Código de Fuso Horário de Conversão de UTC",
+      "versionnumber": "Número da Versão"
+    },
+    "PreferredName": "Card bot",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Card bot (Modos de exibição)",
+    "Name": "_ds_cardbot_views",
+    "RelatedEntityName": "Card bot",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3decdb41-24f2-49f8-b09d-cbf09bd7d204": "Exibição Associada de Card bot",
+      "5cc8085e-4fe2-409f-931f-2863ce026fc7": "Card bot Ativos(as)",
+      "c3412ae8-7d0b-4044-9d85-589c52e9996e": "Card bot Inativos(as)",
+      "c86f44c3-aecd-4a63-bb26-4b3b262fabd2": "Exibição de Consulta de Card bot",
+      "e8fa5fae-50b8-4022-982e-cc3c104a1bf9": "Exibição de Localização Avançada de Card bot"
+    }
+  },
+  {
+    "DisplayName": "Status (Card bot)",
+    "Name": "ds_cardbot_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Ativo(a)",
+      "1": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Card bot"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Card bot",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razão do Status (Card bot)",
+    "Name": "ds_cardbot_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Ativo(a)",
+      "2": "Inativo(a)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Card bot"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Card bot",
+    "Type": "OptionSetInfo"
+  }
+]

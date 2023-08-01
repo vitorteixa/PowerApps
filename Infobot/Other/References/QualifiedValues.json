@@ -1,0 +1,51 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_systemuser_forms",
+      "Namespace": "Usuários (Formulários)",
+      "Values": {
+        "Formulário de Bloco de Hierarquia do Usuário": "c68d6c09-d7a7-4959-8d0f-44b8cff9b452",
+        "Informações": "094fb08a-77bb-49e0-b7ea-8dbddfd01294",
+        "Usuário": "c2cd9e55-d4b4-4b55-9951-16ead79643e5",
+        "Usuário do Aplicativo": "d26924ef-4d80-46f7-ab1d-e6ae80a54ce8"
+      }
+    },
+    {
+      "Kind": "default.cds_ds_cardbot_forms",
+      "Namespace": "Card bot (Formulários)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_ds_confirmacaodeleitura_forms",
+      "Namespace": "Confirmação de Leitura (Formulários)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_ds_areasconcert_forms",
+      "Namespace": "Áreas Concert (Formulários)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_ds_usuariosconcert_forms",
+      "Namespace": "Usuários Concert (Formulários)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_principalobjectattributeaccess_forms",
+      "Namespace": "Compartilhamento de Campo (Formulários)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_aaduser_forms",
+      "Namespace": "AAD Users (Formulários)",
+      "Values": {
+        "Information": "dd5ded01-9aad-4e25-8d0e-e9acdaecbe4e"
+      }
+    },
+    {
+      "Kind": "default.cds_fileattachment_forms",
+      "Namespace": "FileAttachments (Formulários)",
+      "Values": {}
+    }
+  ]
+}

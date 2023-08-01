@@ -1,0 +1,646 @@
+Screen1 As screen:
+    LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
+
+    Form1 As form:
+        BorderColor: =RGBA(243, 242, 241, 1)
+        DataSource: ='Card bot'
+        OnSuccess: |
+            =
+            Set(
+                CurrentItem,
+                Self.LastSubmit
+            );
+            Notify(
+                "Aviso criado com sucesso.",
+                NotificationType.Success
+            );
+            //Navigate(Screen_SelecionaGrupos);;
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+        Name_DataCard2 As typedDataCard.pcfCoreTextualEditCard:
+            BorderColor: =RGBA(243, 242, 241, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ds_name"
+            Default: =ThisItem.Name
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Card bot'],DataSourceInfo.DisplayName,"ds_name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'Card bot'], DataSourceInfo.MaxLength, "ds_name")
+            Required: =true
+            Update: =DataCardValue1.Value
+            Width: =266
+            WidthFit: =true
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+            DataCardKey3 As Rótulo:
+                AutoHeight: =true
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                Height: =22
+                PCFTeamsTheme: ="default"
+                Text: =Parent.DisplayName
+                Tooltip: =Parent.DisplayName
+                VerticalAlignment: =VerticalAlign.Bottom
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue1 As 'Caixa de texto'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                FontSize: =10.5
+                Height: =32
+                Mode: ="SingleLine"
+                PCFTeamsTheme: ="default"
+                Required: =Parent.Required
+                Tooltip: =Parent.DisplayName
+                Value: ="Aviso_"&DataCardValue3.Value&"_"&Now()
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 4
+                ZIndex: =2
+
+            ErrorMessage3 As Rótulo:
+                AutoHeight: =true
+                Color: =Color.Red
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                Height: =30
+                PCFTeamsTheme: ="default"
+                Text: =Parent.Error
+                Tooltip: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible3 As Rótulo:
+                Alignment: =Align.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                PCFTeamsTheme: ="default"
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey3.Y
+                ZIndex: =4
+
+        Título_DataCard2 As typedDataCard.pcfCoreTextualEditCard:
+            BorderColor: =RGBA(243, 242, 241, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ds_titulo"
+            Default: =ThisItem.Título
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Card bot'],DataSourceInfo.DisplayName,"ds_titulo")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'Card bot'], DataSourceInfo.MaxLength, "ds_titulo")
+            Required: =false
+            Update: =DataCardValue8.Value
+            Width: =266
+            WidthFit: =true
+            X: =1
+            Y: =0
+            ZIndex: =2
+
+            DataCardKey10 As Rótulo:
+                AutoHeight: =true
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                Height: =22
+                PCFTeamsTheme: ="default"
+                Text: =Parent.DisplayName
+                Tooltip: =Parent.DisplayName
+                VerticalAlignment: =VerticalAlign.Bottom
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue8 As 'Caixa de texto'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                FontSize: =10.5
+                Height: =32
+                Mode: ="SingleLine"
+                PCFTeamsTheme: ="default"
+                Required: =Parent.Required
+                Tooltip: =Parent.DisplayName
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey10.Y + DataCardKey10.Height + 4
+                ZIndex: =2
+
+            ErrorMessage9 As Rótulo:
+                AutoHeight: =true
+                Color: =Color.Red
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                Height: =30
+                PCFTeamsTheme: ="default"
+                Text: =Parent.Error
+                Tooltip: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue8.Y + DataCardValue8.Height
+                ZIndex: =3
+
+            StarVisible9 As Rótulo:
+                Alignment: =Align.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                PCFTeamsTheme: ="default"
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey10.Y
+                ZIndex: =4
+
+        Subtítulo_DataCard2 As typedDataCard.pcfCoreTextualEditCard:
+            BorderColor: =RGBA(243, 242, 241, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ds_subtitulo"
+            Default: =ThisItem.Subtítulo
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Card bot'],DataSourceInfo.DisplayName,"ds_subtitulo")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'Card bot'], DataSourceInfo.MaxLength, "ds_subtitulo")
+            Required: =false
+            Update: =DataCardValue10.Value
+            Width: =266
+            WidthFit: =true
+            X: =2
+            Y: =0
+            ZIndex: =2
+
+            DataCardKey12 As Rótulo:
+                AutoHeight: =true
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                Height: =22
+                PCFTeamsTheme: ="default"
+                Text: =Parent.DisplayName
+                Tooltip: =Parent.DisplayName
+                VerticalAlignment: =VerticalAlign.Bottom
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue10 As 'Caixa de texto'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                FontSize: =10.5
+                Height: =32
+                Mode: ="SingleLine"
+                PCFTeamsTheme: ="default"
+                Required: =Parent.Required
+                Tooltip: =Parent.DisplayName
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey12.Y + DataCardKey12.Height + 4
+                ZIndex: =2
+
+            ErrorMessage11 As Rótulo:
+                AutoHeight: =true
+                Color: =Color.Red
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                Height: =30
+                PCFTeamsTheme: ="default"
+                Text: =Parent.Error
+                Tooltip: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue10.Y + DataCardValue10.Height
+                ZIndex: =3
+
+            StarVisible11 As Rótulo:
+                Alignment: =Align.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                PCFTeamsTheme: ="default"
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey12.Y
+                ZIndex: =4
+
+        Descrição_DataCard2 As typedDataCard.pcfCoreTextualEditCard:
+            BorderColor: =RGBA(243, 242, 241, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ds_descricao"
+            Default: =ThisItem.Descrição
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Card bot'],DataSourceInfo.DisplayName,"ds_descricao")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'Card bot'], DataSourceInfo.MaxLength, "ds_descricao")
+            Required: =false
+            Update: =DataCardValue11.Value
+            Width: =266
+            WidthFit: =true
+            X: =0
+            Y: =1
+            ZIndex: =2
+
+            DataCardKey13 As Rótulo:
+                AutoHeight: =true
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                Height: =22
+                PCFTeamsTheme: ="default"
+                Text: =Parent.DisplayName
+                Tooltip: =Parent.DisplayName
+                VerticalAlignment: =VerticalAlign.Bottom
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue11 As 'Caixa de texto'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                FontSize: =10.5
+                Height: =32
+                Mode: ="SingleLine"
+                PCFTeamsTheme: ="default"
+                Required: =Parent.Required
+                Tooltip: =Parent.DisplayName
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey13.Y + DataCardKey13.Height + 4
+                ZIndex: =2
+
+            ErrorMessage12 As Rótulo:
+                AutoHeight: =true
+                Color: =Color.Red
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                Height: =30
+                PCFTeamsTheme: ="default"
+                Text: =Parent.Error
+                Tooltip: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue11.Y + DataCardValue11.Height
+                ZIndex: =3
+
+            StarVisible12 As Rótulo:
+                Alignment: =Align.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                PCFTeamsTheme: ="default"
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey13.Y
+                ZIndex: =4
+
+        "'Texto botão 1_DataCard2' As typedDataCard.pcfCoreTextualEditCard":
+            BorderColor: =RGBA(243, 242, 241, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ds_textobotao1"
+            Default: =ThisItem.'Texto botão 1'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Card bot'],DataSourceInfo.DisplayName,"ds_textobotao1")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'Card bot'], DataSourceInfo.MaxLength, "ds_textobotao1")
+            Required: =false
+            Update: =DataCardValue12.Value
+            Width: =266
+            WidthFit: =true
+            X: =1
+            Y: =1
+            ZIndex: =2
+
+            DataCardKey14 As Rótulo:
+                AutoHeight: =true
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                Height: =22
+                PCFTeamsTheme: ="default"
+                Text: =Parent.DisplayName
+                Tooltip: =Parent.DisplayName
+                VerticalAlignment: =VerticalAlign.Bottom
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue12 As 'Caixa de texto'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                FontSize: =10.5
+                Height: =32
+                Mode: ="SingleLine"
+                PCFTeamsTheme: ="default"
+                Required: =Parent.Required
+                Tooltip: =Parent.DisplayName
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey14.Y + DataCardKey14.Height + 4
+                ZIndex: =2
+
+            ErrorMessage13 As Rótulo:
+                AutoHeight: =true
+                Color: =Color.Red
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                Height: =30
+                PCFTeamsTheme: ="default"
+                Text: =Parent.Error
+                Tooltip: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue12.Y + DataCardValue12.Height
+                ZIndex: =3
+
+            StarVisible13 As Rótulo:
+                Alignment: =Align.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                PCFTeamsTheme: ="default"
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey14.Y
+                ZIndex: =4
+
+        "'URL botão 1_DataCard2' As typedDataCard.pcfCoreUrlEditCard":
+            BorderColor: =RGBA(243, 242, 241, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ds_urlbotao1"
+            Default: =ThisItem.'URL botão 1'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Card bot'],DataSourceInfo.DisplayName,"ds_urlbotao1")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =DataCardValue13.Value
+            Width: =266
+            WidthFit: =true
+            X: =2
+            Y: =1
+            ZIndex: =2
+
+            DataCardKey15 As Rótulo:
+                AutoHeight: =true
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                Height: =22
+                PCFTeamsTheme: ="default"
+                Text: =Parent.DisplayName
+                Tooltip: =Parent.DisplayName
+                VerticalAlignment: =VerticalAlign.Bottom
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue13 As 'Caixa de texto'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                FontSize: =10.5
+                Height: =32
+                Mode: ="SingleLine"
+                PCFTeamsTheme: ="default"
+                Required: =Parent.Required
+                Tooltip: =Parent.DisplayName
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey15.Y + DataCardKey15.Height + 4
+                ZIndex: =2
+
+            ErrorMessage14 As Rótulo:
+                AutoHeight: =true
+                Color: =Color.Red
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                Height: =30
+                PCFTeamsTheme: ="default"
+                Text: =Parent.Error
+                Tooltip: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue13.Y + DataCardValue13.Height
+                ZIndex: =3
+
+            StarVisible14 As Rótulo:
+                Alignment: =Align.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =20
+                PCFTeamsTheme: ="default"
+                Text: ="*"
+                VerticalAlignment: =VerticalAlign.Bottom
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey15.Y
+                ZIndex: =4
+
+        "'URL Imagem_DataCard2' As typedDataCard.pcfCoreTextualMultiLineEditCard":
+            BorderColor: =RGBA(243, 242, 241, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ds_urlimagem"
+            Default: =ThisItem.'URL Imagem'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Card bot'],DataSourceInfo.DisplayName,"ds_urlimagem")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =DataCardValue15.Value
+            Width: =266
+            WidthFit: =true
+            X: =0
+            Y: =2
+            ZIndex: =2
+
+            DataCardKey17 As Rótulo:
+                AutoHeight: =true
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                Height: =22
+                PCFTeamsTheme: ="default"
+                Text: =Parent.DisplayName
+                Tooltip: =Parent.DisplayName
+                VerticalAlignment: =VerticalAlign.Bottom
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue15 As 'Caixa de texto'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                FontSize: =10.5
+                Height: =48
+                Mode: ="Multiline"
+                PCFTeamsTheme: ="default"
+                Required: =Parent.Required
+                Tooltip: =Parent.DisplayName
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey17.Y + DataCardKey17.Height + 4
+                ZIndex: =2
+
+            ErrorMessage16 As Rótulo:
+                AutoHeight: =true
+                Color: =Color.Red
+                DisplayMode: =DisplayMode.Edit
+                FontSize: =9
+                Height: =30
+                PCFTeamsTheme: ="default"
+                Text: =Parent.Error
+                Tooltip: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue15.Y + DataCardValue15.Height
+                ZIndex: =3
+
+            StarVisible16 As Rótulo:
+                Alignment: =Align.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                PCFTeamsTheme: ="default"
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey17.Y
+                ZIndex: =4
+
+    Button3 As Botão:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: =SubmitForm(Form1)
+        PCFTeamsTheme: ="default"
+        Width: =96
+        X: =1145
+        Y: =140
+        ZIndex: =2
+
+    Button3_1 As Botão:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: =ResetForm(Form1);NewForm(Form1)
+        PCFTeamsTheme: ="default"
+        Width: =96
+        X: =1145
+        Y: =203
+        ZIndex: =3
+
+    DataTable1 As dataTable.datatable:
+        BorderColor: =RGBA(243, 242, 241, 1)
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(37, 36, 35, 1)
+        DisabledColor: =RGBA(200, 198, 196, 1)
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =RGBA(98, 100, 167, 1)
+        HeadingFont: =Font.'Segoe UI'
+        HeadingFontWeight: =FontWeight.Normal
+        HeadingSize: =10.5
+        Height: =452
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(98, 100, 167, 1)
+        InputFill: =RGBA(243, 242, 241, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        Items: ='Usuários Concert'
+        LinkColor: =RGBA(0, 134, 208, 1)
+        PrimaryColor1: =RGBA(98, 100, 167, 1)
+        PrimaryColor2: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+        PrimaryColor3: =ColorFade(RGBA(98, 100, 167, 1), -50%)
+        SelectedColor: =RGBA(37, 36, 35, 1)
+        SelectedFill: =RGBA(98, 100, 167, .2)
+        Size: =10.5
+        Width: =1169
+        X: =15
+        Y: =300
+        ZIndex: =4
+
+        Name_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Name"
+            FieldName: ="ds_name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Name
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =19
+
+        "'Áreas Concert_Column1' As dataTableColumn.complexTypeColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Áreas Concert"
+            FieldName: ="ds_areasconcert"
+            FieldVariantName: ="complexTypeColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.'Áreas Concert'.Name
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =20
+
+        Email_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Email"
+            FieldName: ="ds_email"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Email
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =21
+
